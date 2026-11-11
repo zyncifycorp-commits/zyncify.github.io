@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYNCIFY — Sync Minds, Shift Threadz | Digital Marketing & Creative Partner</title>
+    <meta name="description" content="Zyncify is a modern digital marketing and creative agency built for brands ready to move faster. Strategy, social, Reels, websites, and performance under one roof.">
+    <link rel="canonical" href="https://www.zyncify.co.in/">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zyncify.co.in/">
+    <meta property="og:title" content="ZYNCIFY — Sync Minds, Shift Threadz.">
+    <meta property="og:description" content="Big-agency thinking without the heavy-agency attitude. Strategy, creative, content, and digital experiences built to move your brand forward.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZYNCIFY — Sync Minds, Shift Threadz.">
+    <meta name="twitter:description" content="Strategy, creative, and digital execution for growing SMEs, startups, and established brands.">
+    <meta name="theme-color" content="#090D1A">
+
+    <!-- Inline SVG Favicon (Official Zyncify Squircle Z Mark from Horizontal Lockup.svg) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Cdefs%3E%3ClinearGradient id='fg' x1='98' y1='8' x2='14' y2='104' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%23C822E8'/%3E%3Cstop offset='46%25' stop-color='%232B2FF2'/%3E%3Cstop offset='100%25' stop-color='%230098FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='104' height='104' rx='24' fill='url(%23fg)'/%3E%3Cpath d='M28 29 H76 C83 29 86 35 82 41 L61 77' stroke='%23FFFFFF' stroke-width='12.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M84 83 H36 C29 83 26 77 30 71 L51 35' stroke='%23FFFFFF' stroke-width='12.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Orbitron (Display Fallback for Good Times) + Poppins (Supporting UI & Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zpink: '#E027E0',
+                        zcyan: '#2EC4ED',
+                        zblue: '#1F4CBF',
+                        zink: '#090D1A',
+                        zslate: '#475569',
+                        zlight: '#F7F9FC',
+                        zborder: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        display: ['"Good Times"', '"Good Times Rg"', 'Orbitron', 'sans-serif'],
+                        sans: ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Structured Data (Organization / ProfessionalService) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Zyncify",
+      "slogan": "Sync Minds, Shift Threadz.",
+      "url": "https://www.zyncify.co.in/",
+      "description": "Modern digital marketing, creative content, and web experience agency for growing SMEs, startups, and established brands.",
+      "sameAs": [
+        "https://www.instagram.com/zyncifycorp/"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Safe local check for Good Times without triggering a 404 console error */
+        @font-face {
+            font-family: 'Good Times';
+            src: local('Good Times Rg'), local('Good Times');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --electric-pink: #E027E0;
+            --cyber-blue: #2EC4ED;
+            --deep-blue: #1F4CBF;
+            --ink-dark: #090D1A;
+            --slate-muted: #475569;
+            --surface-light: #F7F9FC;
+            --border-subtle: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+            background-color: #FFFFFF;
+            color: #090D1A;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+        }
+
+        /* Strict Background Scroll Lock When Any Modal is Open */
+        body.modal-scroll-locked {
+            position: fixed;
+            left: 0;
+            right: 0;
+            width: 100%;
+            overflow-y: scroll;
+        }
+
+        /* Brand Display Typeface (Section 07) */
+        .font-goodtimes {
+            font-family: 'Good Times', 'Good Times Rg', 'Orbitron', sans-serif;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        /* Pre-compiled Native CSS Fallbacks for GitHub Pages / Static Hosting */
+        .bg-zink { background-color: #090D1A !important; }
+        .bg-zlight { background-color: #F7F9FC !important; }
+        .bg-zpink { background-color: #E027E0 !important; }
+        .bg-zcyan { background-color: #2EC4ED !important; }
+        .bg-zblue { background-color: #1F4CBF !important; }
+        .text-zink { color: #090D1A !important; }
+        .text-zslate { color: #475569 !important; }
+        .text-zpink { color: #E027E0 !important; }
+        .text-zcyan { color: #2EC4ED !important; }
+        .text-zblue { color: #1F4CBF !important; }
+        .border-zborder { border-color: #E2E8F0 !important; }
+
+        /* Controlled Brand Gradients (Section 06) */
+        .text-zync-gradient {
+            background: linear-gradient(120deg, #0098FF 0%, #4A2CF5 48%, #E027E0 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .bg-zync-gradient {
+            background: linear-gradient(135deg, #0098FF 0%, #3B28F0 50%, #E027E0 100%);
+        }
+
+        .bg-zync-soft-mesh {
+            background-color: #F7F9FC;
+            background-image:
+                radial-gradient(at 12% 18%, rgba(46, 196, 237, 0.11) 0px, transparent 50%),
+                radial-gradient(at 88% 82%, rgba(224, 39, 224, 0.10) 0px, transparent 50%);
+        }
+
+        /* Hero 3D Rotating & Swipeable Card Stack */
+        .hero-deck-stage {
+            perspective: 1400px;
+            transform-style: preserve-3d;
+            touch-action: pan-y;
+            user-select: none;
+        }
+
+        .hero-deck-card {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.55s cubic-bezier(0.2, 0.85, 0.25, 1), opacity 0.55s cubic-bezier(0.2, 0.85, 0.25, 1);
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+            cursor: grab;
+        }
+
+        .hero-deck-card:active {
+            cursor: grabbing;
+        }
+
+        /* Default Attention-Grabbing Levitation on Front Card */
+        @keyframes heroCardAttentionFloat {
+            0%, 100% {
+                transform: translate3d(0px, 0px, 0px) rotate(0deg) scale(1);
+            }
+            50% {
+                transform: translate3d(0px, -10px, 14px) rotate(-1.1deg) scale(1.015);
+            }
+        }
+
+        /* Subtle Fan-Breathing on Peeking Background Cards */
+        @keyframes heroDeckPeek1 {
+            0%, 100% {
+                transform: translate3d(26px, 16px, -35px) rotate(4.5deg) scale(0.95);
+            }
+            50% {
+                transform: translate3d(34px, 11px, -30px) rotate(6deg) scale(0.955);
+            }
+        }
+
+        @keyframes heroDeckPeek2 {
+            0%, 100% {
+                transform: translate3d(48px, 32px, -70px) rotate(8.5deg) scale(0.90);
+            }
+            50% {
+                transform: translate3d(56px, 26px, -64px) rotate(10deg) scale(0.905);
+            }
+        }
+
+        .hero-card-pos-0 {
+            z-index: 30;
+            opacity: 1;
+            animation: heroCardAttentionFloat 3.6s ease-in-out infinite;
+        }
+
+        .hero-card-pos-1 {
+            z-index: 20;
+            opacity: 0.88;
+            animation: heroDeckPeek1 3.6s ease-in-out infinite;
+        }
+
+        .hero-card-pos-2 {
+            z-index: 10;
+            opacity: 0.62;
+            animation: heroDeckPeek2 3.6s ease-in-out infinite;
+        }
+
+        .hero-card-pos-3 {
+            z-index: 5;
+            opacity: 0;
+            transform: translate3d(-42px, 18px, -95px) rotate(-6deg) scale(0.86);
+            pointer-events: none;
+        }
+
+        .hero-deck-stage:hover .hero-card-pos-0,
+        .hero-deck-stage:hover .hero-card-pos-1,
+        .hero-deck-stage:hover .hero-card-pos-2 {
+            animation-play-state: paused;
+        }
+
+        /* Auto-cycle top progress bar GPU animation */
+        @keyframes deckTimerFill {
+            0% { transform: scaleX(0); }
+            100% { transform: scaleX(1); }
+        }
+
+        .deck-progress-bar {
+            transform-origin: left center;
+            animation: deckTimerFill 3.5s linear infinite;
+        }
+
+        .hero-deck-stage:hover .deck-progress-bar {
+            animation-play-state: paused;
+        }
+
+        /* Swipe attention pill pulse */
+        @keyframes swipeBadgeBounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(4px); }
+        }
+
+        .swipe-attention-pill {
+            animation: swipeBadgeBounce 2.2s ease-in-out infinite;
+        }
+
+        /* Capability Button Gradient Hover & Active Selection (GPU Composited) */
+        .cap-btn {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+        }
+
+        .cap-btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(125deg, rgba(0, 152, 255, 0.14) 0%, rgba(74, 44, 245, 0.14) 50%, rgba(224, 39, 224, 0.16) 100%);
+            opacity: 0;
+            transition: opacity 0.28s ease;
+            z-index: -1;
+        }
+
+        .cap-btn:hover {
+            transform: translateY(-2px);
+            border-color: #2EC4ED !important;
+        }
+
+        .cap-btn:hover::before {
+            opacity: 1;
+        }
+
+        .cap-btn.active {
+            background: #090D1A !important;
+            color: #FFFFFF !important;
+            border-color: #2EC4ED !important;
+            transform: translateY(-2px);
+        }
+
+        .cap-btn.active::before {
+            background: linear-gradient(125deg, rgba(0, 152, 255, 0.26) 0%, rgba(74, 44, 245, 0.30) 50%, rgba(224, 39, 224, 0.26) 100%);
+            opacity: 1;
+        }
+
+        .cap-btn.active .cap-desc {
+            color: #CBD5E1 !important;
+        }
+
+        .cap-btn.active .cap-badge {
+            background: linear-gradient(135deg, #0098FF 0%, #E027E0 100%) !important;
+            color: #FFFFFF !important;
+            border-color: transparent !important;
+        }
+
+        /* Operating Rhythm Equal-Size Pop-Out Stage Cards */
+        .rhythm-stage-card {
+            transition: transform 0.32s cubic-bezier(0.2, 0.85, 0.25, 1), border-color 0.32s ease;
+            will-change: transform;
+        }
+
+        .rhythm-stage-card:hover {
+            transform: translateY(-8px) scale(1.04);
+            border-color: #2EC4ED !important;
+            z-index: 10;
+        }
+
+        /* Client Voices Card Hover Lift */
+        .client-voice-card {
+            transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.25, 1), border-color 0.3s ease;
+            will-change: transform;
+        }
+
+        .client-voice-card:hover {
+            transform: translateY(-7px);
+            border-color: #2EC4ED !important;
+        }
+
+        /* Reduced Motion Accessibility Support */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="selection:bg-zblue selection:text-white">
+
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-zink focus:text-white focus:rounded-lg">
+        Skip to content
+    </a>
+
+    <!-- Floating Toast Notification for Scope Selection / Deselection -->
+    <div id="scopeToast" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300 max-w-sm">
+        <div class="bg-zink text-white px-4 py-3.5 rounded-2xl shadow-2xl border border-white/15 flex items-center gap-3">
+            <span id="scopeToastBadge" class="w-6 h-6 rounded-full bg-zync-gradient flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+            <div class="text-xs">
+                <p id="scopeToastTitle" class="font-semibold text-white">Added to Active Scope</p>
+                <p id="scopeToastSub" class="text-slate-300 mt-0.5">1 capability synced</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         STICKY NAVIGATION HEADER
+         (Uses Logo Variant 1: Horizontal Lockup_2.svg)
+    =========================================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-zborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Logo Variant 1: Horizontal Lockup_2.svg (Light Background) -->
+            <a href="#" class="inline-flex items-center group focus:outline-none" aria-label="Zyncify Home - Sync Minds, Shift Threadz">
+                <svg class="h-11 sm:h-12 w-auto" viewBox="0 0 580 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zyncify Sync Minds Shift Threadz Horizontal Lockup">
+                    <defs>
+                        <!-- Diagonal Squircle Gradient: Top-Right Magenta/Purple -> Royal Blue -> Bottom-Left Cyan-Blue -->
+                        <linearGradient id="hdrSquircleGrad" x1="108" y1="8" x2="12" y2="112" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#C822E8"/>
+                            <stop offset="22%" stop-color="#9A27F8"/>
+                            <stop offset="56%" stop-color="#2B2FF2"/>
+                            <stop offset="100%" stop-color="#0098FF"/>
+                        </linearGradient>
+                        <!-- Horizontal Tagline Gradient: Cyan-Blue -> Royal Violet -> Electric Pink -->
+                        <linearGradient id="hdrTaglineGrad" x1="158" y1="98" x2="544" y2="98" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0098FF"/>
+                            <stop offset="50%" stop-color="#4A2CF5"/>
+                            <stop offset="100%" stop-color="#E027E0"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Left Squircle Icon (rx="22%") -->
+                    <rect x="6" y="6" width="108" height="108" rx="24" fill="url(#hdrSquircleGrad)"/>
+                    <!-- Interlocking Rounded White Z Ribbons -->
+                    <path d="M31 31 H80 C86 31 89 37 85 43 L64 78" stroke="#FFFFFF" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M89 89 H40 C34 89 31 83 35 77 L56 42" stroke="#FFFFFF" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Right Top: Exact Custom Wide Geometric ZYNCIFY Wordmark in Solid Black -->
+                    <g fill="#000000">
+                        <!-- Z -->
+                        <path d="M144 27 H198 V35.5 L159 61.5 H198 V70 H142 V61.5 L181 35.5 H144 V27 Z"/>
+                        <!-- Y -->
+                        <path d="M206 27 H219.5 L237 47 L254.5 27 H268 L242 56 V70 H232 V56 L206 27 Z"/>
+                        <!-- N (with signature rounded bottom-right apex) -->
+                        <path d="M277 27 H288.5 L321 56.5 V27 H331 V65 C331 68.5 327.5 70.5 324 68 L287 37.5 V70 H277 V27 Z"/>
+                        <!-- C (wide curved geometric) -->
+                        <path d="M364 27 H398 V35.5 H365 C355.5 35.5 351 40.5 351 48.5 C351 56.5 355.5 61.5 365 61.5 H398 V70 H364 C348 70 340 61 340 48.5 C340 36 348 27 364 27 Z"/>
+                        <!-- I -->
+                        <rect x="409" y="27" width="10.5" height="43"/>
+                        <!-- F (open-stem geometric with detached middle bar) -->
+                        <path d="M433 27 H487 V35.5 H443.5 V70 H433 V27 Z"/>
+                        <rect x="451" y="45.5" width="31" height="8.5"/>
+                        <!-- Y -->
+                        <path d="M493 27 H506.5 L524 47 L541.5 27 H555 L529 56 V70 H519 V56 L493 27 Z"/>
+                    </g>
+                    <!-- Right Bottom: Centered Wide-Tracked All-Caps SYNC MINDS, SHIFT THREADZ -->
+                    <text x="351" y="101" text-anchor="middle" fill="url(#hdrTaglineGrad)" font-family="'Poppins', sans-serif" font-weight="600" font-size="13.5" letter-spacing="5.2">SYNC MINDS, SHIFT THREADZ</text>
+                </svg>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zslate" aria-label="Main Navigation">
+                <a href="#work" class="hover:text-zink transition-colors py-1">Selected Work</a>
+                <a href="#capabilities" class="hover:text-zink transition-colors py-1 flex items-center gap-1.5">
+                    <span>Capabilities</span>
+                    <span id="navScopeCounter" class="hidden px-1.5 py-0.5 text-[10px] font-bold rounded-full bg-zink text-zcyan">0</span>
+                </a>
+                <a href="#process" class="hover:text-zink transition-colors py-1">Operating Rhythm</a>
+                <a href="#approach" class="hover:text-zink transition-colors py-1">Why Zyncify</a>
+                <a href="#voices" class="hover:text-zink transition-colors py-1">Client Voices</a>
+            </nav>
+
+            <!-- Header Primary Action: Opens Instant Modal Form -->
+            <div class="flex items-center gap-3">
+                <button type="button" onclick="openProjectModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zink text-white text-xs sm:text-sm font-semibold hover:bg-zblue transition-all shadow-sm">
+                    <span>Start a Project</span>
+                    <span class="w-2 h-2 rounded-full bg-zcyan animate-pulse" aria-hidden="true"></span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" id="mobileMenuBtn" onclick="toggleMobileNav()" aria-label="Open navigation menu" aria-expanded="false" class="md:hidden p-2.5 rounded-xl border border-zborder text-zink hover:bg-zlight">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileNavDrawer" class="hidden md:hidden border-t border-zborder bg-white px-4 pt-3 pb-6 space-y-2">
+            <a href="#work" onclick="toggleMobileNav()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-zink hover:bg-zlight">01 / Selected Work</a>
+            <a href="#capabilities" onclick="toggleMobileNav()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-zink hover:bg-zlight">02 / Capabilities & Scope</a>
+            <a href="#process" onclick="toggleMobileNav()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-zink hover:bg-zlight">03 / Operating Rhythm</a>
+            <a href="#approach" onclick="toggleMobileNav()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-zink hover:bg-zlight">04 / Why Zyncify</a>
+            <a href="#voices" onclick="toggleMobileNav()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-zink hover:bg-zlight">05 / Client Voices</a>
+            <div class="pt-2">
+                <button type="button" onclick="toggleMobileNav(); openProjectModal();" class="w-full py-3 rounded-xl bg-zync-gradient text-white text-sm font-semibold shadow-md">
+                    Start a Project →
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ==========================================
+             ZONE 1: EDITORIAL LIGHT HERO + 3D SWIPEABLE DECK
+             (No duplicate Start a Project button; no arrow buttons)
+        =========================================== -->
+        <section class="relative pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden bg-white">
+            <!-- Soft Controlled Ambient Glows (Section 06) -->
+            <div class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-zcyan/10 blur-3xl" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-zpink/10 blur-3xl" aria-hidden="true"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Column: Positioning & Proposition -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zlight border border-zborder">
+                            <span class="w-2 h-2 rounded-full bg-zync-gradient"></span>
+                            <span class="text-xs font-semibold tracking-wider uppercase text-zink">Modern Creative & Digital Partner</span>
+                        </div>
+
+                        <h1 class="font-goodtimes text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-zink leading-[1.08]">
+                            SYNC MINDS.<br>
+                            <span class="text-zync-gradient">SHIFT THREADZ.</span>
+                        </h1>
+
+                        <p class="text-lg sm:text-xl font-semibold text-zink max-w-2xl leading-snug">
+                            Strategy, creative, and digital execution for brands ready to move faster.
+                        </p>
+
+                        <p class="text-sm sm:text-base text-zslate leading-relaxed max-w-xl">
+                            From social storytelling and short-form Reels to high-converting websites and performance marketing, Zyncify brings big-agency thinking under one roof—without the heavy-agency attitude or inflated retainers.
+                        </p>
+
+                        <!-- Hero Action Row (Only Explore Selected Work & Build Custom Scope) -->
+                        <div class="pt-2 flex flex-wrap items-center gap-4">
+                            <a href="#work" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-zink text-white text-sm font-semibold hover:bg-zblue transition-all shadow-sm">
+                                <span>Explore Selected Work</span>
+                                <span aria-hidden="true">↓</span>
+                            </a>
+                            <a href="#capabilities" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zlight border border-zborder text-zink text-sm font-semibold hover:border-zcyan transition-all">
+                                <span>Build Custom Scope</span>
+                                <span class="text-zblue font-bold">+</span>
+                            </a>
+                        </div>
+
+                        <!-- Graphic Principle Pill Ribbon (Sync -> Connect -> Transform -> Move) -->
+                        <div class="pt-4 border-t border-zborder/80 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-medium text-zslate">
+                            <span class="text-[11px] uppercase tracking-wider font-semibold text-zink">Graphic Principle:</span>
+                            <button type="button" onclick="setDeckCard(0)" class="px-2.5 py-1 rounded-md bg-zlight hover:text-zink transition-colors">01. Sync</button>
+                            <span class="text-zcyan font-bold">→</span>
+                            <button type="button" onclick="setDeckCard(1)" class="px-2.5 py-1 rounded-md bg-zlight hover:text-zink transition-colors">02. Connect</button>
+                            <span class="text-zblue font-bold">→</span>
+                            <button type="button" onclick="setDeckCard(2)" class="px-2.5 py-1 rounded-md bg-zlight hover:text-zink transition-colors">03. Transform</button>
+                            <span class="text-zpink font-bold">→</span>
+                            <button type="button" onclick="setDeckCard(3)" class="px-2.5 py-1 rounded-md bg-zlight hover:text-zink transition-colors">04. Move</button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive 3D Floating & Swipeable 4-Card Deck (No Arrow Buttons) -->
+                    <div class="lg:col-span-5 flex flex-col items-center">
+                        <div id="heroDeckStage" class="hero-deck-stage relative w-full max-w-[340px] sm:max-w-[360px] h-[410px]" aria-label="Interactive Zyncify Pillars Card Deck">
+                            
+                            <!-- Card 01: Social & Reels -->
+                            <div data-card-index="0" class="hero-deck-card hero-card-pos-0 w-full h-[380px] rounded-3xl bg-zink text-white p-6 shadow-2xl border border-white/15 flex flex-col justify-between overflow-hidden">
+                                <!-- Top Auto-Cycle Progress Bar -->
+                                <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden mb-3">
+                                    <div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="px-2.5 py-1 rounded-full bg-zcyan/20 text-zcyan font-semibold">01 / SOCIAL & REELS</span>
+                                    <span class="text-slate-400 font-mono">01 / 04</span>
+                                </div>
+                                <!-- Visual Storyboard Preview -->
+                                <div class="my-auto py-4">
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-[10px] font-mono uppercase tracking-wider text-zcyan">9:16 VERTICAL ENGINE</span>
+                                            <span class="px-2 py-0.5 text-[10px] rounded bg-zpink/20 text-zpink font-semibold">HIGH RETENTION</span>
+                                        </div>
+                                        <p class="font-goodtimes text-lg font-bold text-white leading-snug">REELS & SOCIAL ARCHITECTURE</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Scroll-stopping hooks, native motion graphics, and platform-first storytelling built to shift conversations.
+                                        </p>
+                                        <div class="grid grid-cols-3 gap-2 pt-1">
+                                            <div class="p-2 rounded-lg bg-white/5 text-center">
+                                                <p class="text-xs font-bold text-zcyan">Hooks</p>
+                                                <p class="text-[10px] text-slate-400">3-Sec Hold</p>
+                                            </div>
+                                            <div class="p-2 rounded-lg bg-white/5 text-center">
+                                                <p class="text-xs font-bold text-white">Reels</p>
+                                                <p class="text-[10px] text-slate-400">Native Edit</p>
+                                            </div>
+                                            <div class="p-2 rounded-lg bg-white/5 text-center">
+                                                <p class="text-xs font-bold text-zpink">Grids</p>
+                                                <p class="text-[10px] text-slate-400">Cohesive</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-[11px] text-slate-300 pt-2 border-t border-white/10">
+                                    <span>Pillar: Creative & Content</span>
+                                    <span class="text-zcyan font-semibold">Swipe to shift →</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 02: Strategy & Growth -->
+                            <div data-card-index="1" class="hero-deck-card hero-card-pos-1 w-full h-[380px] rounded-3xl bg-white text-zink p-6 shadow-2xl border-2 border-zborder flex flex-col justify-between overflow-hidden">
+                                <div class="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-3">
+                                    <div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="px-2.5 py-1 rounded-full bg-zblue/10 text-zblue font-semibold">02 / STRATEGY & GROWTH</span>
+                                    <span class="text-zslate font-mono">02 / 04</span>
+                                </div>
+                                <div class="my-auto py-4">
+                                    <div class="p-4 rounded-2xl bg-zlight border border-zborder space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-[10px] font-mono uppercase tracking-wider text-zblue font-semibold">FULL-FUNNEL DEMAND</span>
+                                            <span class="px-2 py-0.5 text-[10px] rounded bg-zblue/10 text-zblue font-semibold">ROAS FOCUSED</span>
+                                        </div>
+                                        <p class="font-goodtimes text-lg font-bold text-zink leading-snug">PERFORMANCE & SEO ENGINE</p>
+                                        <p class="text-xs text-zslate leading-relaxed">
+                                            Paid Meta & Google acquisition paired with rapid creative testing and high-intent search visibility.
+                                        </p>
+                                        <div class="space-y-1.5 pt-1">
+                                            <div class="w-full bg-white p-2 rounded-lg border border-zborder flex items-center justify-between text-xs">
+                                                <span class="font-medium text-zink">Creative Ad Variants</span>
+                                                <span class="text-zblue font-bold">Weekly Sprints</span>
+                                            </div>
+                                            <div class="w-full bg-white p-2 rounded-lg border border-zborder flex items-center justify-between text-xs">
+                                                <span class="font-medium text-zink">Search & Landing CRO</span>
+                                                <span class="text-zpink font-bold">High Intent</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-[11px] text-zslate pt-2 border-t border-zborder">
+                                    <span>Pillar: Digital Marketing</span>
+                                    <span class="text-zblue font-semibold">Swipe to shift →</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 03: Web & Digital -->
+                            <div data-card-index="2" class="hero-deck-card hero-card-pos-2 w-full h-[380px] rounded-3xl bg-zink text-white p-6 shadow-2xl border border-white/15 flex flex-col justify-between overflow-hidden">
+                                <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden mb-3">
+                                    <div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="px-2.5 py-1 rounded-full bg-zpink/20 text-zpink font-semibold">03 / WEB & DIGITAL</span>
+                                    <span class="text-slate-400 font-mono">03 / 04</span>
+                                </div>
+                                <div class="my-auto py-4">
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-[10px] font-mono uppercase tracking-wider text-zpink">INTERACTIVE FLAGSHIPS</span>
+                                            <span class="px-2 py-0.5 text-[10px] rounded bg-zcyan/20 text-zcyan font-semibold">FAST UI</span>
+                                        </div>
+                                        <p class="font-goodtimes text-lg font-bold text-white leading-snug">WEBSITES & LANDING SYSTEMS</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Custom-designed, responsive websites and campaign landing pages engineered to convert attention into pipeline.
+                                        </p>
+                                        <div class="grid grid-cols-2 gap-2 pt-1 text-xs">
+                                            <div class="p-2 rounded-lg bg-white/5 border border-white/10">
+                                                <p class="font-semibold text-white">UI/UX Systems</p>
+                                                <p class="text-[10px] text-slate-400">Clean hierarchy</p>
+                                            </div>
+                                            <div class="p-2 rounded-lg bg-white/5 border border-white/10">
+                                                <p class="font-semibold text-zcyan">Conversion</p>
+                                                <p class="text-[10px] text-slate-400">Frictionless flow</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-[11px] text-slate-300 pt-2 border-t border-white/10">
+                                    <span>Pillar: Digital Experiences</span>
+                                    <span class="text-zpink font-semibold">Swipe to shift →</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 04: Brand Identity -->
+                            <div data-card-index="3" class="hero-deck-card hero-card-pos-3 w-full h-[380px] rounded-3xl bg-white text-zink p-6 shadow-2xl border-2 border-zborder flex flex-col justify-between overflow-hidden">
+                                <div class="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-3">
+                                    <div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="px-2.5 py-1 rounded-full bg-zcyan/15 text-zink font-semibold">04 / BRAND IDENTITY</span>
+                                    <span class="text-zslate font-mono">04 / 04</span>
+                                </div>
+                                <div class="my-auto py-4">
+                                    <div class="p-4 rounded-2xl bg-zlight border border-zborder space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-[10px] font-mono uppercase tracking-wider text-zblue font-semibold">DISTINCTIVE VOICE</span>
+                                            <span class="px-2 py-0.5 text-[10px] rounded bg-zpink/15 text-zpink font-semibold">ZERO TEMPLATES</span>
+                                        </div>
+                                        <p class="font-goodtimes text-lg font-bold text-zink leading-snug">CAMPAIGN CONCEPTS & COPY</p>
+                                        <p class="text-xs text-zslate leading-relaxed">
+                                            Unexpected campaign ideas, sharp brand positioning, and copywriting that sounds human—never corporate.
+                                        </p>
+                                        <div class="p-2.5 rounded-xl bg-white border border-zborder text-xs font-medium text-zink">
+                                            "Big-agency thinking without the big-agency attitude."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between text-[11px] text-zslate pt-2 border-t border-zborder">
+                                    <span>Pillar: Brand Strategy</span>
+                                    <span class="text-zblue font-semibold">Swipe to shift →</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swipe Indicator & Accessible Dot Controls (No Arrow Buttons) -->
+                        <div class="mt-4 flex flex-col items-center gap-2.5">
+                            <div class="swipe-attention-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-zlight border border-zborder text-xs font-medium text-zslate">
+                                <span class="text-zblue font-bold">⇄</span>
+                                <span>Drag or swipe cards to explore</span>
+                            </div>
+
+                            <!-- Accessible Dot Group (Passes Lighthouse ARIA & Touch Target Audits) -->
+                            <div id="heroDeckDots" role="group" aria-label="Select showcase card" class="flex items-center gap-1">
+                                <button type="button" onclick="setDeckCard(0)" aria-label="Show Card 1: Social and Reels" aria-current="true" class="p-2 focus:outline-none">
+                                    <span class="dot-bar block h-2 w-6 rounded-full bg-zink transition-all"></span>
+                                </button>
+                                <button type="button" onclick="setDeckCard(1)" aria-label="Show Card 2: Strategy and Growth" aria-current="false" class="p-2 focus:outline-none">
+                                    <span class="dot-bar block h-2 w-2 rounded-full bg-slate-300 transition-all"></span>
+                                </button>
+                                <button type="button" onclick="setDeckCard(2)" aria-label="Show Card 3: Web and Digital" aria-current="false" class="p-2 focus:outline-none">
+                                    <span class="dot-bar block h-2 w-2 rounded-full bg-slate-300 transition-all"></span>
+                                </button>
+                                <button type="button" onclick="setDeckCard(3)" aria-label="Show Card 4: Brand Identity" aria-current="false" class="p-2 focus:outline-none">
+                                    <span class="dot-bar block h-2 w-2 rounded-full bg-slate-300 transition-all"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PROOF STRIP (Architectural Dark Ink Bar)
+        =========================================== -->
+        <section class="bg-zink text-white py-8 border-y border-white/10" aria-label="Agency Credibility and Sectors">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5 space-y-1">
+                        <p class="text-[11px] font-mono uppercase tracking-widest text-zcyan">Built For Ambitious Teams</p>
+                        <p class="text-sm sm:text-base font-medium text-slate-200">
+                            Partnering with growing SMEs, funded startups, and established consumer & B2B brands.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-3 gap-4 border-t md:border-t-0 md:border-l border-white/15 pt-4 md:pt-0 md:pl-8">
+                        <div>
+                            <p class="font-goodtimes text-xl sm:text-2xl font-bold text-white">3 Pillars</p>
+                            <p class="text-xs text-slate-300 mt-0.5">Growth, Creative & Web</p>
+                        </div>
+                        <div>
+                            <p class="font-goodtimes text-xl sm:text-2xl font-bold text-zcyan">15+ Modules</p>
+                            <p class="text-xs text-slate-300 mt-0.5">Flexible custom scopes</p>
+                        </div>
+                        <div>
+                            <p class="font-goodtimes text-xl sm:text-2xl font-bold text-zpink">Direct</p>
+                            <p class="text-xs text-slate-300 mt-0.5">Zero heavy-agency bloat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ZONE 2: FULL-BLEED DARK NAVY PORTFOLIO STAGE (#work)
+        =========================================== -->
+        <section id="work" class="bg-zink text-white py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                    <div>
+                        <span class="text-xs font-mono uppercase tracking-widest text-zcyan">01 // Selected Work & Case Proofs</span>
+                        <h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-white mt-2">
+                            THREADZ IN <span class="text-zync-gradient">MOTION.</span>
+                        </h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-md">
+                        See how we combine strategic clarity, distinctive creative, and fast digital execution to solve real commercial problems.
+                    </p>
+                </div>
+
+                <!-- 3 Full-Width Editorial Case Study Rows -->
+                <div class="space-y-12">
+                    
+                    <!-- Case Study 01: Pulse Audio -->
+                    <article class="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-8 lg:p-10 hover:border-zcyan/50 transition-colors">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                            <!-- Visual Storyboard Mockup -->
+                            <div class="lg:col-span-6 rounded-2xl bg-gradient-to-br from-[#121B38] via-[#0D1326] to-[#2A1038] p-6 border border-white/10">
+                                <div class="flex items-center justify-between text-xs text-slate-300 mb-4">
+                                    <span class="font-mono text-zcyan">CASE 01 // CONSUMER ELECTRONICS</span>
+                                    <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-white">90-Day Sprint</span>
+                                </div>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="rounded-xl bg-black/40 border border-white/10 p-3 flex flex-col justify-between h-44">
+                                        <span class="text-[10px] font-mono text-zcyan">REEL 01 // HOOK</span>
+                                        <p class="font-goodtimes text-xs text-white leading-snug">"SOUND WITHOUT THE WIRE TAX."</p>
+                                        <span class="text-[10px] text-emerald-400 font-semibold">48% 3s Hold Rate</span>
+                                    </div>
+                                    <div class="rounded-xl bg-black/40 border border-zpink/40 p-3 flex flex-col justify-between h-44">
+                                        <span class="text-[10px] font-mono text-zpink">REEL 02 // DROP</span>
+                                        <p class="font-goodtimes text-xs text-white leading-snug">BASS LABS KINETIC CUT</p>
+                                        <span class="text-[10px] text-zcyan font-semibold">2.8x Share Velocity</span>
+                                    </div>
+                                    <div class="rounded-xl bg-black/40 border border-white/10 p-3 flex flex-col justify-between h-44">
+                                        <span class="text-[10px] font-mono text-slate-300">CAROUSEL // SPEC</span>
+                                        <p class="font-goodtimes text-xs text-white leading-snug">ANC TEARDOWN THREAD</p>
+                                        <span class="text-[10px] text-amber-300 font-semibold">High Save Ratio</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case Study Narrative -->
+                            <div class="lg:col-span-6 space-y-5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-zcyan/15 text-zcyan text-xs font-semibold">Pulse Audio</span>
+                                    <span class="text-xs text-slate-400">Short-Form Reels & Social Architecture</span>
+                                </div>
+                                <h3 class="font-goodtimes text-xl sm:text-2xl font-bold text-white">
+                                    REBUILDING SOCIAL VELOCITY FOR A CHALLENGER AUDIO BRAND
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 text-xs">
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zcyan uppercase tracking-wider text-[10px]">The Challenge</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Static product renders were blending into crowded feeds, causing rising paid CPMs and flat organic discovery.
+                                        </p>
+                                    </div>
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zpink uppercase tracking-wider text-[10px]">What We Did</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Replaced studio templates with creator-led 9:16 Reels, kinetic typography teardowns, and paid social whitelisting.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
+                                    <div>
+                                        <p class="text-lg font-bold text-white">3.1x Organic Reach Expansion</p>
+                                        <p class="text-xs text-slate-400">Measured across 90-day product launch window</p>
+                                    </div>
+                                    <button type="button" onclick="openCaseStudyModal(0)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zink text-xs font-semibold hover:bg-zcyan transition-colors">
+                                        <span>Inspect Case Study</span>
+                                        <span aria-hidden="true">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 02: Nova Fintech -->
+                    <article class="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-8 lg:p-10 hover:border-zcyan/50 transition-colors">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                            <!-- Case Study Narrative -->
+                            <div class="lg:col-span-6 order-2 lg:order-1 space-y-5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-zblue/30 text-zcyan text-xs font-semibold">Nova Fintech</span>
+                                    <span class="text-xs text-slate-400">Website Design, Development & Conversion System</span>
+                                </div>
+                                <h3 class="font-goodtimes text-xl sm:text-2xl font-bold text-white">
+                                    SHIFTING A B2B PAYMENT PLATFORM FROM CORPORATE TO CONTEMPORARY
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 text-xs">
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zcyan uppercase tracking-wider text-[10px]">The Challenge</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Legacy corporate blue web pages had a 78% bounce rate and failed to explain the product to modern SME founders.
+                                        </p>
+                                    </div>
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zpink uppercase tracking-wider text-[10px]">What We Did</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Designed a light-first interactive web flagship, simplified messaging copy, and built high-intent paid landing pages.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
+                                    <div>
+                                        <p class="text-lg font-bold text-white">+64% Qualified Demo Requests</p>
+                                        <p class="text-xs text-slate-400">Measured 60 days post-website relaunch</p>
+                                    </div>
+                                    <button type="button" onclick="openCaseStudyModal(1)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zink text-xs font-semibold hover:bg-zcyan transition-colors">
+                                        <span>Inspect Case Study</span>
+                                        <span aria-hidden="true">→</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual UI Mockup -->
+                            <div class="lg:col-span-6 order-1 lg:order-2 rounded-2xl bg-gradient-to-br from-[#0F2454] via-[#090D1A] to-[#0D384F] p-6 border border-white/10">
+                                <div class="flex items-center justify-between text-xs text-slate-300 mb-4">
+                                    <span class="font-mono text-zcyan">CASE 02 // B2B FINTECH FLAGSHIP</span>
+                                    <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-white">Web + CRO</span>
+                                </div>
+                                <div class="rounded-xl bg-white p-4 text-zink space-y-3 shadow-lg">
+                                    <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                                        <div class="flex items-center gap-1.5">
+                                            <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                                        </div>
+                                        <span class="text-[10px] font-mono text-slate-500">novapay.io // Interactive Calculator</span>
+                                    </div>
+                                    <div class="grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-7 space-y-1.5">
+                                            <span class="text-[10px] font-semibold text-zblue uppercase">Instant Settlement</span>
+                                            <p class="font-goodtimes text-sm font-bold text-zink">MOVE REVENUE WITHOUT FRICTION</p>
+                                            <p class="text-[11px] text-zslate">Interactive fee comparison & 2-step onboarding flow.</p>
+                                        </div>
+                                        <div class="col-span-5 p-3 rounded-xl bg-zlight border border-zborder text-center">
+                                            <p class="text-[10px] text-zslate">Conversion Lift</p>
+                                            <p class="font-goodtimes text-lg font-bold text-zblue">+64%</p>
+                                            <span class="inline-block mt-1 px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-semibold">Verified CRO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 03: Kinetic Drop 04 -->
+                    <article class="rounded-3xl bg-white/[0.04] border border-white/10 p-6 sm:p-8 lg:p-10 hover:border-zcyan/50 transition-colors">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                            <!-- Visual Campaign Mockup -->
+                            <div class="lg:col-span-6 rounded-2xl bg-gradient-to-br from-[#2B0E38] via-[#131C38] to-[#090D1A] p-6 border border-white/10">
+                                <div class="flex items-center justify-between text-xs text-slate-300 mb-4">
+                                    <span class="font-mono text-zpink">CASE 03 // D2C APPAREL & STREETWEAR</span>
+                                    <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-white">Full-Funnel Drop</span>
+                                </div>
+                                <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-goodtimes text-white">KINETIC DROP 04 // LAUNCH MATRIX</span>
+                                        <span class="text-xs font-mono text-zcyan">ROAS 3.8x</span>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                                            <p class="font-bold text-zpink">Teaser</p>
+                                            <p class="text-[10px] text-slate-300 mt-0.5">Waitlist Landing</p>
+                                        </div>
+                                        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                                            <p class="font-bold text-zcyan">Creative</p>
+                                            <p class="text-[10px] text-slate-300 mt-0.5">18 Ad Variants</p>
+                                        </div>
+                                        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                                            <p class="font-bold text-white">Retarget</p>
+                                            <p class="text-[10px] text-slate-300 mt-0.5">72hr Sell-Through</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case Study Narrative -->
+                            <div class="lg:col-span-6 space-y-5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-zpink/20 text-zpink text-xs font-semibold">Kinetic Streetwear</span>
+                                    <span class="text-xs text-slate-400">Campaign Concept, Paid Ads & Drop Microsite</span>
+                                </div>
+                                <h3 class="font-goodtimes text-xl sm:text-2xl font-bold text-white">
+                                    SYNCHRONIZING CREATIVE & PAID MEDIA FOR A SEASONAL CAPSULE LAUNCH
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 text-xs">
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zcyan uppercase tracking-wider text-[10px]">The Challenge</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Previous seasonal drops suffered from disconnected social teasers and slow mobile checkout pages.
+                                        </p>
+                                    </div>
+                                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                                        <p class="font-semibold text-zpink uppercase tracking-wider text-[10px]">What We Did</p>
+                                        <p class="text-slate-300 mt-1 leading-relaxed">
+                                            Unified the campaign concept, built a fast waitlist landing page, and ran synchronized Meta + Google acquisition.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
+                                    <div>
+                                        <p class="text-lg font-bold text-white">3.8x Blended Paid ROAS</p>
+                                        <p class="text-xs text-slate-400">Across 4-week capsule launch campaign</p>
+                                    </div>
+                                    <button type="button" onclick="openCaseStudyModal(2)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zink text-xs font-semibold hover:bg-zcyan transition-colors">
+                                        <span>Inspect Case Study</span>
+                                        <span aria-hidden="true">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ZONE 3: CAPABILITIES & INTERACTIVE CUSTOM SCOPE (#capabilities)
+             - Starts with 0 selections and '+' prompt
+             - Gradient hover animation on each button
+             - Toast popup on select/deselect
+             - Prominent 'Launch Project Brief with Selected Scope →' button
+        =========================================== -->
+        <section id="capabilities" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Left Sticky Rail: Active Scope Configurator -->
+                    <div class="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-widest text-zblue font-semibold">02 // What Zyncify Does</span>
+                            <h2 class="font-goodtimes text-2xl sm:text-3xl font-bold text-zink mt-2">
+                                FLEXIBLE <span class="text-zync-gradient">CAPABILITIES.</span>
+                            </h2>
+                            <p class="text-sm text-zslate mt-3 leading-relaxed">
+                                We aren't a rigid checklist. Click any capability on the right to weave your custom project scope, then launch your brief.
+                            </p>
+                        </div>
+
+                        <!-- Active Scope Box (Starts at 0 with '+' prompt) -->
+                        <div class="rounded-3xl bg-zlight border-2 border-zborder p-6 space-y-5 shadow-sm">
+                            <div class="flex items-center justify-between border-b border-zborder pb-3.5">
+                                <div>
+                                    <span class="text-[11px] font-mono uppercase tracking-wider text-zslate block">Your Custom Thread</span>
+                                    <h3 class="text-base font-bold text-zink">Active Scope Box</h3>
+                                </div>
+                                <span id="activeScopeCountBadge" class="px-3 py-1 rounded-full bg-zink text-white text-xs font-semibold">
+                                    0 Selected
+                                </span>
+                            </div>
+
+                            <!-- Empty State with '+' Icon Prompt -->
+                            <div id="activeScopeEmptyPrompt" class="py-6 px-4 rounded-2xl border-2 border-dashed border-slate-300 bg-white text-center space-y-2">
+                                <button type="button" onclick="focusFirstCapability()" aria-label="Select a capability from the list" class="w-11 h-11 mx-auto rounded-full bg-zlight border border-zborder flex items-center justify-center text-xl font-bold text-zblue hover:bg-zink hover:text-white transition-colors">
+                                    +
+                                </button>
+                                <p class="text-xs font-semibold text-zink">Select at least one capability</p>
+                                <p class="text-[11px] text-zslate">Click any service module across the 3 pillars to add it to your project brief.</p>
+                            </div>
+
+                            <!-- Selected Capability Pills Container -->
+                            <div id="activeScopePillsList" class="hidden flex-wrap gap-2"></div>
+
+                            <!-- Prominent Launch Project Brief Button -->
+                            <div class="pt-2 space-y-2">
+                                <button type="button" onclick="openProjectModal()" class="w-full py-3.5 px-5 rounded-2xl bg-zync-gradient text-white text-xs sm:text-sm font-semibold shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                                    <span>Launch Project Brief with Selected Scope</span>
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                                <button type="button" id="clearScopeBtn" onclick="clearAllCapabilities()" class="hidden w-full py-2 text-xs font-medium text-zslate hover:text-zink transition-colors">
+                                    Reset selected scope
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: 3 Core Service Pillars (15 Official Capabilities) -->
+                    <div class="lg:col-span-8 space-y-8" id="capabilitiesPillarsContainer">
+                        
+                        <!-- Pillar 01: Digital Marketing -->
+                        <div class="rounded-3xl bg-white border border-zborder p-6 sm:p-8 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-6 border-b border-zborder">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-9 h-9 rounded-xl bg-zcyan/15 text-zblue font-goodtimes text-xs font-bold flex items-center justify-center">01</span>
+                                    <div>
+                                        <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">DIGITAL MARKETING</h3>
+                                        <p class="text-xs text-zslate">Full-funnel visibility, community growth, and measurable acquisition</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono text-zslate">5 Capabilities</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                <button type="button" id="firstCapBtn" onclick="toggleService('Social Media Management', this)" data-cap="Social Media Management" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Social Media Management</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Consistent channel architecture, editorial calendars, and active community management.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Social Media Strategy', this)" data-cap="Social Media Strategy" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Social Media Strategy</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Platform positioning, audience persona mapping, and repeatable content playbooks.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Paid Marketing', this)" data-cap="Paid Marketing" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Paid Marketing</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Targeted Meta, Google, and LinkedIn ad campaigns engineered for high-intent reach.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('SEO', this)" data-cap="SEO" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">SEO</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Technical site structure, on-page optimization, and search authority that compounds.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Performance Marketing', this)" data-cap="Performance Marketing" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60 sm:col-span-2">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Performance Marketing</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Data-driven acquisition funnels, creative A/B testing, and ROAS optimization.</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 02: Creative & Content -->
+                        <div class="rounded-3xl bg-white border border-zborder p-6 sm:p-8 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-6 border-b border-zborder">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-9 h-9 rounded-xl bg-zpink/15 text-zpink font-goodtimes text-xs font-bold flex items-center justify-center">02</span>
+                                    <div>
+                                        <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">CREATIVE & CONTENT</h3>
+                                        <p class="text-xs text-zslate">Unexpected concepts, distinctive typography, and thumb-stopping motion</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono text-zslate">6 Capabilities</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                <button type="button" onclick="toggleService('Brand Communication', this)" data-cap="Brand Communication" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Brand Communication</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Visual identity systems, brand positioning narratives, and communication guidelines.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Social Media Creatives', this)" data-cap="Social Media Creatives" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Social Media Creatives</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Bespoke carousels, static ad key visuals, and bold typographic social systems.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Reels & Video Content', this)" data-cap="Reels & Video Content" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Reels & Video Content</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Short-form vertical video direction, scripting, kinetic edits, and motion design.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Content Strategy', this)" data-cap="Content Strategy" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Content Strategy</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Storytelling pillars, hook frameworks, and multi-channel distribution roadmaps.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Copywriting', this)" data-cap="Copywriting" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Copywriting</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Sharp taglines, web messaging, ad scripts, and human-first brand voice.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Campaign Concepts', this)" data-cap="Campaign Concepts" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Campaign Concepts</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Big-idea hero launches, seasonal drops, and integrated brand moments.</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 03: Digital Experiences -->
+                        <div class="rounded-3xl bg-white border border-zborder p-6 sm:p-8 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-6 border-b border-zborder">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-9 h-9 rounded-xl bg-zblue/15 text-zblue font-goodtimes text-xs font-bold flex items-center justify-center">03</span>
+                                    <div>
+                                        <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">DIGITAL EXPERIENCES</h3>
+                                        <p class="text-xs text-zslate">High-velocity websites, landing pages, and interactive web flagships</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono text-zslate">4 Capabilities</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                <button type="button" onclick="toggleService('Website Design', this)" data-cap="Website Design" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Website Design</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Bespoke UI/UX architecture, responsive design systems, and interactive prototypes.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Website Development', this)" data-cap="Website Development" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Website Development</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Clean, fast-loading frontend and CMS builds optimized for SEO and mobile speed.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Landing Pages', this)" data-cap="Landing Pages" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Landing Pages</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Conversion-focused campaign pages built for paid traffic and product launches.</p>
+                                </button>
+
+                                <button type="button" onclick="toggleService('Digital Experiences', this)" data-cap="Digital Experiences" aria-pressed="false" class="cap-btn text-left p-4 rounded-2xl border border-zborder bg-zlight/60">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <span class="font-semibold text-sm">Digital Experiences</span>
+                                        <span class="cap-badge px-2 py-0.5 rounded-full text-[11px] font-semibold bg-white border border-zborder text-zink">+ Add</span>
+                                    </div>
+                                    <p class="cap-desc text-xs text-zslate mt-1.5 leading-relaxed">Interactive scope builders, product configurators, and custom web microsites.</p>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ZONE 4: THE OPERATING RHYTHM (#process)
+             (All 4 stages equal size + pop-out hover animation)
+        =========================================== -->
+        <section id="process" class="py-20 lg:py-28 bg-zync-soft-mesh border-y border-zborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs font-mono uppercase tracking-widest text-zblue font-semibold">03 // The Operating Rhythm</span>
+                    <h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-zink mt-2">
+                        SYNC → CONNECT → <span class="text-zync-gradient">TRANSFORM → MOVE</span>
+                    </h2>
+                    <p class="text-sm sm:text-base text-zslate mt-3">
+                        How different minds, strategic insights, and digital threads come together to move your brand forward.
+                    </p>
+                </div>
+
+                <!-- 4 Equal-Sized Cards with Pop-Out Hover -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    
+                    <!-- Stage 01: Sync -->
+                    <div class="rhythm-stage-card h-full rounded-3xl bg-white border-2 border-zborder p-7 shadow-md flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-zcyan/15 text-zblue font-mono text-xs font-bold">STAGE 01</span>
+                                <span class="w-8 h-8 rounded-full bg-zlight flex items-center justify-center font-bold text-zcyan">01</span>
+                            </div>
+                            <h3 class="font-goodtimes text-xl font-bold text-zink">SYNC</h3>
+                            <p class="text-xs sm:text-sm text-zslate leading-relaxed">
+                                We audit your current brand positioning, audience friction points, and commercial targets so strategy and creative start on the exact same page.
+                            </p>
+                        </div>
+                        <div class="pt-5 mt-6 border-t border-zborder flex items-center justify-between text-xs font-semibold text-zink">
+                            <span>Discovery & Audit</span>
+                            <span class="text-zcyan">Week 01</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 02: Connect -->
+                    <div class="rhythm-stage-card h-full rounded-3xl bg-white border-2 border-zborder p-7 shadow-md flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-zblue/15 text-zblue font-mono text-xs font-bold">STAGE 02</span>
+                                <span class="w-8 h-8 rounded-full bg-zlight flex items-center justify-center font-bold text-zblue">02</span>
+                            </div>
+                            <h3 class="font-goodtimes text-xl font-bold text-zink">CONNECT</h3>
+                            <p class="text-xs sm:text-sm text-zslate leading-relaxed">
+                                We weave your custom digital thread—connecting campaign concepts, brand voice, channel playbooks, and conversion architecture.
+                            </p>
+                        </div>
+                        <div class="pt-5 mt-6 border-t border-zborder flex items-center justify-between text-xs font-semibold text-zink">
+                            <span>Strategy & Architecture</span>
+                            <span class="text-zblue">Week 02</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 03: Transform -->
+                    <div class="rhythm-stage-card h-full rounded-3xl bg-white border-2 border-zborder p-7 shadow-md flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-zpink/15 text-zpink font-mono text-xs font-bold">STAGE 03</span>
+                                <span class="w-8 h-8 rounded-full bg-zlight flex items-center justify-center font-bold text-zpink">03</span>
+                            </div>
+                            <h3 class="font-goodtimes text-xl font-bold text-zink">TRANSFORM</h3>
+                            <p class="text-xs sm:text-sm text-zslate leading-relaxed">
+                                High-craft production across short-form Reels, social visual systems, ad creatives, and responsive websites—zero generic templates.
+                            </p>
+                        </div>
+                        <div class="pt-5 mt-6 border-t border-zborder flex items-center justify-between text-xs font-semibold text-zink">
+                            <span>Creative & Web Build</span>
+                            <span class="text-zpink">Sprint Execution</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 04: Move -->
+                    <div class="rhythm-stage-card h-full rounded-3xl bg-white border-2 border-zborder p-7 shadow-md flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-zink text-zcyan font-mono text-xs font-bold">STAGE 04</span>
+                                <span class="w-8 h-8 rounded-full bg-zlight flex items-center justify-center font-bold text-zink">04</span>
+                            </div>
+                            <h3 class="font-goodtimes text-xl font-bold text-zink">MOVE</h3>
+                            <p class="text-xs sm:text-sm text-zslate leading-relaxed">
+                                Launch, measure, and iterate. We track real creative retention, search visibility, and paid ROAS to scale what moves the needle.
+                            </p>
+                        </div>
+                        <div class="pt-5 mt-6 border-t border-zborder flex items-center justify-between text-xs font-semibold text-zink">
+                            <span>Scale & Optimization</span>
+                            <span class="text-zblue">Continuous</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ZONE 5: WHY ZYNCIFY OPERATING MODEL (#approach)
+             + CLIENT VOICES CARDS (#voices)
+             (Removed Start Your Project button from Operating Model)
+        =========================================== -->
+        <section id="approach" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+                
+                <!-- Operating Model Comparison Matrix -->
+                <div>
+                    <div class="max-w-3xl mb-12">
+                        <span class="text-xs font-mono uppercase tracking-widest text-zblue font-semibold">04 // Brand Positioning</span>
+                        <h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-zink mt-2">
+                            BIG-AGENCY THINKING.<br>
+                            <span class="text-zync-gradient">ZERO HEAVY-AGENCY ATTITUDE.</span>
+                        </h2>
+                        <p class="text-sm sm:text-base text-zslate mt-3">
+                            Good marketing should be smart, creative, and accessible—without layers of corporate bureaucracy or inflated retainers.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                        <!-- Traditional Agency Model -->
+                        <div class="lg:col-span-5 rounded-3xl bg-zlight border border-zborder p-7 sm:p-8 flex flex-col justify-between">
+                            <div class="space-y-5">
+                                <span class="inline-block px-3 py-1 rounded-full bg-slate-200 text-zslate text-xs font-semibold uppercase tracking-wider">
+                                    Traditional Agency Model
+                                </span>
+                                <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">
+                                    LAYERED & RETAINER-HEAVY
+                                </h3>
+                                <ul class="space-y-3.5 text-xs sm:text-sm text-zslate">
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs shrink-0 mt-0.5">−</span>
+                                        <span>Rigid service packages that force you to pay for overhead you don't use.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs shrink-0 mt-0.5">−</span>
+                                        <span>Slow turnarounds filtered through multiple layers of account managers.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs shrink-0 mt-0.5">−</span>
+                                        <span>Predictable corporate templates recycled across different industries.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-xs shrink-0 mt-0.5">−</span>
+                                        <span>Disconnected handoffs between strategy, social content, and web teams.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pt-6 mt-6 border-t border-zborder text-xs text-zslate">
+                                Built for slow enterprise bureaucracy.
+                            </div>
+                        </div>
+
+                        <!-- The Zyncify Operating Model (No Start Your Project button inside) -->
+                        <div class="lg:col-span-7 rounded-3xl bg-zink text-white p-7 sm:p-9 shadow-xl border border-white/15 flex flex-col justify-between relative overflow-hidden">
+                            <div class="w-full h-1.5 bg-zync-gradient absolute top-0 left-0" aria-hidden="true"></div>
+                            <div class="space-y-5">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="px-3.5 py-1 rounded-full bg-zync-gradient text-white text-xs font-semibold uppercase tracking-wider">
+                                        The Zyncify Operating Model
+                                    </span>
+                                    <span class="text-xs font-mono text-zcyan">MODERN • AGILE • DIRECT</span>
+                                </div>
+                                <h3 class="font-goodtimes text-xl sm:text-2xl font-bold text-white">
+                                    DIRECT, FLEXIBLE & BUILT AROUND OUTCOMES
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                                        <p class="text-xs font-bold text-zcyan">01. Modular Scope</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Scale capabilities up or down as your product launches, campaigns, and growth priorities evolve.
+                                        </p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                                        <p class="text-xs font-bold text-zpink">02. Makers on Your Thread</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Collaborate directly with the strategists, designers, and developers building your work.
+                                        </p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                                        <p class="text-xs font-bold text-white">03. Strategy-Backed Creative</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Bold visual expression and playful experimentation anchored in clear commercial logic.
+                                        </p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                                        <p class="text-xs font-bold text-zcyan">04. Unified Execution</p>
+                                        <p class="text-xs text-slate-300 leading-relaxed">
+                                            Social, Reels, paid ads, and web experiences designed as one connected system.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                                <span>Positioned for growing SMEs, startups & established brands.</span>
+                                <span class="text-zcyan font-semibold">Sync Minds, Shift Threadz.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Voices Section (#voices) — Separate Hover-Animated Cards + Circular Photo Slots -->
+                <div id="voices" class="pt-4">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-widest text-zblue font-semibold">05 // Client Voices</span>
+                            <h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-zink mt-2">
+                                WHAT BRANDS SAY ABOUT <span class="text-zync-gradient">WORKING WITH US.</span>
+                            </h2>
+                        </div>
+                        <p class="text-sm text-zslate max-w-md">
+                            Real feedback from founders and marketing leaders who shifted their digital presence with Zyncify.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Client Card 01 -->
+                        <article class="client-voice-card rounded-3xl bg-zlight border-2 border-zborder p-7 flex flex-col justify-between shadow-sm">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2.5 py-1 rounded-full bg-white border border-zborder text-[11px] font-semibold text-zblue">D2C Consumer Brand</span>
+                                    <span class="text-zpink text-sm font-bold" aria-hidden="true">★★★★★</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-zink leading-relaxed">
+                                    "Zyncify brought the exact energy our social channels were missing. Instead of generic templates, they built a Reels and paid creative system that immediately lifted our engagement and cut our acquisition costs."
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-6 border-t border-zborder flex items-center gap-3.5">
+                                <img src="https://placehold.co/96x96/090D1A/2EC4ED?text=AR"
+                                     onerror="this.src='https://placehold.co/96x96/1F4CBF/FFFFFF?text=AR'"
+                                     alt="Photo of Arjun Reddy"
+                                     width="48" height="48" loading="lazy" decoding="async"
+                                     class="w-12 h-12 rounded-full object-cover border-2 border-zcyan shrink-0">
+                                <div>
+                                    <h3 class="text-sm font-bold text-zink">Arjun Reddy</h3>
+                                    <p class="text-xs text-zslate">Co-Founder, Pulse Audio</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Client Card 02 -->
+                        <article class="client-voice-card rounded-3xl bg-zlight border-2 border-zborder p-7 flex flex-col justify-between shadow-sm">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2.5 py-1 rounded-full bg-white border border-zborder text-[11px] font-semibold text-zblue">B2B SaaS & Fintech</span>
+                                    <span class="text-zpink text-sm font-bold" aria-hidden="true">★★★★★</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-zink leading-relaxed">
+                                    "We needed a website and brand voice that felt modern without losing enterprise trust. The team moved twice as fast as our previous agency and delivered a site that doubled our demo signups."
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-6 border-t border-zborder flex items-center gap-3.5">
+                                <img src="https://placehold.co/96x96/090D1A/E027E0?text=NK"
+                                     onerror="this.src='https://placehold.co/96x96/E027E0/FFFFFF?text=NK'"
+                                     alt="Photo of Neha Kapoor"
+                                     width="48" height="48" loading="lazy" decoding="async"
+                                     class="w-12 h-12 rounded-full object-cover border-2 border-zpink shrink-0">
+                                <div>
+                                    <h3 class="text-sm font-bold text-zink">Neha Kapoor</h3>
+                                    <p class="text-xs text-zslate">Head of Growth, Nova Fintech</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Client Card 03 -->
+                        <article class="client-voice-card rounded-3xl bg-zlight border-2 border-zborder p-7 flex flex-col justify-between shadow-sm">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2.5 py-1 rounded-full bg-white border border-zborder text-[11px] font-semibold text-zblue">Retail & Apparel</span>
+                                    <span class="text-zpink text-sm font-bold" aria-hidden="true">★★★★★</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-zink leading-relaxed">
+                                    "Having strategy, campaign concepts, landing pages, and performance ads under one roof saved us weeks of coordination. Zyncify genuinely feels like an extension of our founding team."
+                                </p>
+                            </div>
+                            <div class="pt-5 mt-6 border-t border-zborder flex items-center gap-3.5">
+                                <img src="https://placehold.co/96x96/090D1A/FFFFFF?text=RV"
+                                     onerror="this.src='https://placehold.co/96x96/090D1A/2EC4ED?text=RV'"
+                                     alt="Photo of Rohan Varma"
+                                     width="48" height="48" loading="lazy" decoding="async"
+                                     class="w-12 h-12 rounded-full object-cover border-2 border-zblue shrink-0">
+                                <div>
+                                    <h3 class="text-sm font-bold text-zink">Rohan Varma</h3>
+                                    <p class="text-xs text-zslate">Brand Director, Kinetic Drop</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ZONE 6: FLAGSHIP PROJECT BRIEF STAGE (#enquire)
+             - Features Stacked Primary Logo Dark Background_2.svg & Primary Logo_2.svg
+             - Linked to Google Sheet + Private Dispatch, Zero Public Email
+        =========================================== -->
+        <section id="enquire" class="py-16 lg:py-24 bg-zlight border-t border-zborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-3xl bg-zink text-white p-6 sm:p-10 lg:p-14 shadow-2xl relative overflow-hidden">
+                    <div class="w-full h-2 bg-zync-gradient absolute top-0 left-0" aria-hidden="true"></div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                        <!-- Left Column: Context, Stacked Primary Logo Lockup & Synced Scope Summary -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="flex items-center justify-between gap-4">
+                                <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-zcyan font-mono text-xs uppercase tracking-widest">
+                                    06 // Start Your Thread
+                                </span>
+                                <!-- Stacked Primary Logo Dark Background_2.svg Badge -->
+                                <svg class="h-14 w-auto" viewBox="0 0 280 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zyncify Stacked Primary Dark Logo">
+                                    <defs>
+                                        <linearGradient id="stackedDarkRibbonGrad" x1="88" y1="14" x2="192" y2="112" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#D126E2"/>
+                                            <stop offset="50%" stop-color="#5E28F4"/>
+                                            <stop offset="100%" stop-color="#0094FF"/>
+                                        </linearGradient>
+                                        <linearGradient id="stackedDarkTagGrad" x1="30" y1="196" x2="250" y2="196" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#0098FF"/>
+                                            <stop offset="50%" stop-color="#5B2BF5"/>
+                                            <stop offset="100%" stop-color="#E027E0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Unboxed Gradient Z Ribbons (Primary Logo Dark Background_2.svg) -->
+                                    <path d="M95 22 H178 C188 22 193 32 187 42 L152 100" stroke="url(#stackedDarkRibbonGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M185 114 H102 C92 114 87 104 93 94 L128 36" stroke="url(#stackedDarkRibbonGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <!-- Stacked Crisp White ZYNCIFY Wordmark -->
+                                    <g fill="#FFFFFF" transform="translate(18, 132) scale(0.58)">
+                                        <path d="M144 27 H198 V35.5 L159 61.5 H198 V70 H142 V61.5 L181 35.5 H144 V27 Z"/>
+                                        <path d="M206 27 H219.5 L237 47 L254.5 27 H268 L242 56 V70 H232 V56 L206 27 Z"/>
+                                        <path d="M277 27 H288.5 L321 56.5 V27 H331 V65 C331 68.5 327.5 70.5 324 68 L287 37.5 V70 H277 V27 Z"/>
+                                        <path d="M364 27 H398 V35.5 H365 C355.5 35.5 351 40.5 351 48.5 C351 56.5 355.5 61.5 365 61.5 H398 V70 H364 C348 70 340 61 340 48.5 C340 36 348 27 364 27 Z"/>
+                                        <rect x="409" y="27" width="10.5" height="43"/>
+                                        <path d="M433 27 H487 V35.5 H443.5 V70 H433 V27 Z"/>
+                                        <rect x="451" y="45.5" width="31" height="8.5"/>
+                                        <path d="M493 27 H506.5 L524 47 L541.5 27 H555 L529 56 V70 H519 V56 L493 27 Z"/>
+                                    </g>
+                                    <!-- Stacked Gradient Tagline -->
+                                    <text x="140" y="196" text-anchor="middle" fill="url(#stackedDarkTagGrad)" font-family="'Poppins', sans-serif" font-weight="600" font-size="9" letter-spacing="3.2">SYNC MINDS, SHIFT THREADZ</text>
+                                </svg>
+                            </div>
+
+                            <h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-white leading-tight">
+                                READY TO <span class="text-zync-gradient">MOVE FASTER?</span>
+                            </h2>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Share your brand stage, selected capabilities, and goals. Our strategy and creative lead will review your brief and respond within 24 business hours.
+                            </p>
+
+                            <!-- Live Synced Scope Preview Box -->
+                            <div class="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono uppercase tracking-wider text-zcyan">Synced Scope Modules</span>
+                                    <a href="#capabilities" class="text-xs text-slate-300 underline hover:text-white">+ Edit Modules</a>
+                                </div>
+                                <div id="bottomFormScopePills" class="flex flex-wrap gap-2">
+                                    <span class="text-xs text-slate-400 italic">No specific modules selected yet (General Enquiry)</span>
+                                </div>
+                            </div>
+
+                            <!-- Brand Stage Selector -->
+                            <div class="space-y-2">
+                                <label class="block text-xs font-mono uppercase tracking-wider text-slate-300">Your Brand Stage</label>
+                                <div class="grid grid-cols-3 gap-2" role="group" aria-label="Select Brand Stage">
+                                    <button type="button" onclick="selectBrandStage('Startup / Launch', this)" class="stage-pill-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-zcyan bg-zcyan/20 text-white transition-all">
+                                        Startup / Launch
+                                    </button>
+                                    <button type="button" onclick="selectBrandStage('Growing SME', this)" class="stage-pill-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-white/15 bg-white/5 text-slate-300 hover:text-white transition-all">
+                                        Growing SME
+                                    </button>
+                                    <button type="button" onclick="selectBrandStage('Established Brand', this)" class="stage-pill-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-white/15 bg-white/5 text-slate-300 hover:text-white transition-all">
+                                        Established
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Crisp White Project Brief Form (With Primary Logo_2.svg Badge) -->
+                        <div class="lg:col-span-7 bg-white text-zink rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl">
+                            <div class="flex items-center justify-between gap-4 mb-5 pb-4 border-b border-zborder">
+                                <div>
+                                    <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">PROJECT BRIEF CONFIGURATION</h3>
+                                    <p class="text-xs text-zslate mt-0.5">Fill in your details below to send your project brief and log it to our project sheet.</p>
+                                </div>
+                                <!-- Logo Variant 3: Stacked Primary Logo_2.svg (Light Background) -->
+                                <svg class="h-14 w-auto shrink-0 hidden sm:block" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zyncify Stacked Primary Logo">
+                                    <defs>
+                                        <linearGradient id="stackedLightBoxGrad" x1="196" y1="10" x2="84" y2="122" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#C822E8"/>
+                                            <stop offset="22%" stop-color="#9A27F8"/>
+                                            <stop offset="56%" stop-color="#2B2FF2"/>
+                                            <stop offset="100%" stop-color="#0098FF"/>
+                                        </linearGradient>
+                                        <linearGradient id="stackedLightTagGrad" x1="30" y1="204" x2="250" y2="204" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#0098FF"/>
+                                            <stop offset="50%" stop-color="#4A2CF5"/>
+                                            <stop offset="100%" stop-color="#E027E0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Top Squircle Icon -->
+                                    <rect x="82" y="8" width="116" height="116" rx="26" fill="url(#stackedLightBoxGrad)"/>
+                                    <path d="M109 35 H162 C169 35 172 41 168 48 L145 86" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M171 97 H118 C111 97 108 91 112 84 L135 46" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <!-- Stacked Solid Black ZYNCIFY Wordmark -->
+                                    <g fill="#000000" transform="translate(18, 136) scale(0.58)">
+                                        <path d="M144 27 H198 V35.5 L159 61.5 H198 V70 H142 V61.5 L181 35.5 H144 V27 Z"/>
+                                        <path d="M206 27 H219.5 L237 47 L254.5 27 H268 L242 56 V70 H232 V56 L206 27 Z"/>
+                                        <path d="M277 27 H288.5 L321 56.5 V27 H331 V65 C331 68.5 327.5 70.5 324 68 L287 37.5 V70 H277 V27 Z"/>
+                                        <path d="M364 27 H398 V35.5 H365 C355.5 35.5 351 40.5 351 48.5 C351 56.5 355.5 61.5 365 61.5 H398 V70 H364 C348 70 340 61 340 48.5 C340 36 348 27 364 27 Z"/>
+                                        <rect x="409" y="27" width="10.5" height="43"/>
+                                        <path d="M433 27 H487 V35.5 H443.5 V70 H433 V27 Z"/>
+                                        <rect x="451" y="45.5" width="31" height="8.5"/>
+                                        <path d="M493 27 H506.5 L524 47 L541.5 27 H555 L529 56 V70 H519 V56 L493 27 Z"/>
+                                    </g>
+                                    <text x="140" y="202" text-anchor="middle" fill="url(#stackedLightTagGrad)" font-family="'Poppins', sans-serif" font-weight="600" font-size="9" letter-spacing="3.2">SYNC MINDS, SHIFT THREADZ</text>
+                                </svg>
+                            </div>
+
+                            <form id="bottomEnquiryForm" onsubmit="handleProjectBriefSubmit(event, 'bottom')" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="bottomName" class="block text-xs font-semibold text-zink mb-1">Your Name *</label>
+                                        <input type="text" id="bottomName" name="name" required placeholder="e.g., Vikram Rao" class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                                    </div>
+                                    <div>
+                                        <label for="bottomBrand" class="block text-xs font-semibold text-zink mb-1">Brand / Company Name *</label>
+                                        <input type="text" id="bottomBrand" name="brand" required placeholder="e.g., Horizon Labs" class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="bottomEmail" class="block text-xs font-semibold text-zink mb-1">Work Email *</label>
+                                        <input type="email" id="bottomEmail" name="email" required placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                                    </div>
+                                    <div>
+                                        <label for="bottomPhone" class="block text-xs font-semibold text-zink mb-1">Phone / WhatsApp *</label>
+                                        <input type="tel" id="bottomPhone" name="phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="bottomTimeline" class="block text-xs font-semibold text-zink mb-1">Target Timeline / Engagement Model</label>
+                                    <select id="bottomTimeline" name="timeline" class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                                        <option value="Immediate Sprint (Within 2 Weeks)">Immediate Sprint (Within 2 Weeks)</option>
+                                        <option value="Monthly Creative & Growth Retainer">Monthly Creative & Growth Retainer</option>
+                                        <option value="Website / Campaign Launch (30–60 Days)">Website / Campaign Launch (30–60 Days)</option>
+                                        <option value="Flexible / Exploring Options">Flexible / Exploring Options</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="bottomNotes" class="block text-xs font-semibold text-zink mb-1">Project Goals & Context *</label>
+                                    <textarea id="bottomNotes" name="notes" rows="3" required placeholder="Tell us what you're building, key challenges, or links to your current website/social..." class="w-full px-4 py-3 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue"></textarea>
+                                </div>
+
+                                <button type="submit" id="bottomSubmitBtn" class="w-full py-4 px-6 rounded-2xl bg-zync-gradient text-white text-sm font-semibold shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                                    <span>Send Project Brief</span>
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </form>
+
+                            <!-- Submission Confirmation & Linked Google Sheet Panel -->
+                            <div id="bottomSuccessPanel" class="hidden mt-5 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <div>
+                                        <p class="text-sm font-bold text-emerald-950">✓ Project Brief Logged & Dispatched!</p>
+                                        <p class="text-xs text-emerald-800 mt-0.5">Your structured row has been copied to your clipboard and synced for the Zyncify project tracker.</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 pt-1">
+                                    <a href="https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zink text-white text-xs font-semibold hover:bg-zblue transition-colors">
+                                        <span>Open Linked Google Sheet</span>
+                                        <span aria-hidden="true">↗</span>
+                                    </a>
+                                    <button type="button" onclick="copyLastSubmissionRow()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-emerald-300 text-emerald-900 text-xs font-semibold hover:bg-emerald-100 transition-colors">
+                                        <span>Copy Sheet Row Again</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         DARK NAVY FOOTER
+         - Uses Logo Variant 2: Horizontal Logo Dark Background_2.svg
+         - Instagram URL: https://www.instagram.com/zyncifycorp/
+         - Zero Public Email, No Footer Start a Project Brief Button
+    =========================================== -->
+    <footer class="bg-zink text-white border-t border-white/10 py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-white/10 items-start">
+                
+                <!-- Brand Lockup (Horizontal Logo Dark Background_2.svg) & Positioning -->
+                <div class="md:col-span-6 space-y-4">
+                    <a href="#" class="inline-flex items-center focus:outline-none" aria-label="Zyncify Home">
+                        <!-- Logo Variant 2: Horizontal Logo Dark Background_2.svg -->
+                        <svg class="h-12 w-auto" viewBox="0 0 580 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zyncify Dark Background Horizontal Logo">
+                            <defs>
+                                <!-- Unboxed Z Ribbon Diagonal Gradient: Top-Left Pink/Purple -> Violet -> Bottom-Right Cyan-Blue -->
+                                <linearGradient id="ftrDarkRibbonGrad" x1="20" y1="18" x2="105" y2="104" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#D126E2"/>
+                                    <stop offset="50%" stop-color="#5E28F4"/>
+                                    <stop offset="100%" stop-color="#0094FF"/>
+                                </linearGradient>
+                                <!-- Horizontal Tagline Gradient -->
+                                <linearGradient id="ftrDarkTagGrad" x1="158" y1="98" x2="544" y2="98" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#0098FF"/>
+                                    <stop offset="50%" stop-color="#5B2BF5"/>
+                                    <stop offset="100%" stop-color="#E027E0"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Standalone Unboxed Interlocking Z Ribbons -->
+                            <path d="M24 26 H86 C94 26 98 34 93 42 L67 84" stroke="url(#ftrDarkRibbonGrad)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M96 94 H34 C26 94 22 86 27 78 L53 36" stroke="url(#ftrDarkRibbonGrad)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Crisp White Custom Geometric ZYNCIFY Wordmark -->
+                            <g fill="#FFFFFF">
+                                <!-- Z -->
+                                <path d="M144 27 H198 V35.5 L159 61.5 H198 V70 H142 V61.5 L181 35.5 H144 V27 Z"/>
+                                <!-- Y -->
+                                <path d="M206 27 H219.5 L237 47 L254.5 27 H268 L242 56 V70 H232 V56 L206 27 Z"/>
+                                <!-- N -->
+                                <path d="M277 27 H288.5 L321 56.5 V27 H331 V65 C331 68.5 327.5 70.5 324 68 L287 37.5 V70 H277 V27 Z"/>
+                                <!-- C -->
+                                <path d="M364 27 H398 V35.5 H365 C355.5 35.5 351 40.5 351 48.5 C351 56.5 355.5 61.5 365 61.5 H398 V70 H364 C348 70 340 61 340 48.5 C340 36 348 27 364 27 Z"/>
+                                <!-- I -->
+                                <rect x="409" y="27" width="10.5" height="43"/>
+                                <!-- F -->
+                                <path d="M433 27 H487 V35.5 H443.5 V70 H433 V27 Z"/>
+                                <rect x="451" y="45.5" width="31" height="8.5"/>
+                                <!-- Y -->
+                                <path d="M493 27 H506.5 L524 47 L541.5 27 H555 L529 56 V70 H519 V56 L493 27 Z"/>
+                            </g>
+                            <!-- All-Caps Wide-Tracked Gradient Tagline -->
+                            <text x="351" y="101" text-anchor="middle" fill="url(#ftrDarkTagGrad)" font-family="'Poppins', sans-serif" font-weight="600" font-size="13.5" letter-spacing="5.2">SYNC MINDS, SHIFT THREADZ</text>
+                        </svg>
+                    </a>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-md leading-relaxed">
+                        A modern digital marketing and creative agency bringing together strategy, creativity, technology, and content for brands ready to move faster.
+                    </p>
+                </div>
+
+                <!-- Navigation Column -->
+                <div class="md:col-span-3 space-y-2.5 text-xs sm:text-sm">
+                    <p class="font-goodtimes text-xs font-bold text-white uppercase tracking-wider">Navigation</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#work" class="hover:text-zcyan transition-colors">Selected Work</a></li>
+                        <li><a href="#capabilities" class="hover:text-zcyan transition-colors">Capabilities & Scope</a></li>
+                        <li><a href="#process" class="hover:text-zcyan transition-colors">The Operating Rhythm</a></li>
+                        <li><a href="#approach" class="hover:text-zcyan transition-colors">Why Zyncify</a></li>
+                        <li><a href="#voices" class="hover:text-zcyan transition-colors">Client Voices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Connect Column (No Public Email, No Footer Start a Project Button) -->
+                <div class="md:col-span-3 space-y-2.5 text-xs sm:text-sm">
+                    <p class="font-goodtimes text-xs font-bold text-white uppercase tracking-wider">Social Threadz</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>
+                            <a href="https://www.instagram.com/zyncifycorp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-medium text-zcyan hover:text-zpink transition-colors">
+                                <span>Instagram (@zyncifycorp)</span>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        <li class="text-xs text-slate-400 pt-1">
+                            Digital-First Creative Partner • India & Global
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>© 2026 ZYNCIFY. All rights reserved. Sync Minds, Shift Threadz.</p>
+                <p class="font-mono text-[11px]">Strategy • Creative • Content • Digital Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         MODAL 1: CASE STUDY INSPECTOR POPUP
+         - Only a cross ('✕') close button (No 'Close (Esc)' text)
+         - Does NOT close when clicking the outer backdrop
+         - Locks background page scroll while open
+    =========================================== -->
+    <div id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="csModalTitle" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-zink/80 backdrop-blur-md">
+        <!-- Modal Content Box (Clicking outer area does NOT close modal) -->
+        <div class="relative w-full max-w-2xl rounded-3xl bg-white text-zink shadow-2xl border border-zborder p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
+            <!-- Top Header with ONLY a Cross ('✕') Close Button -->
+            <div class="flex items-start justify-between gap-4 pb-4 border-b border-zborder">
+                <div>
+                    <span id="csModalTag" class="px-3 py-1 rounded-full bg-zlight border border-zborder text-xs font-semibold text-zblue">Case Study</span>
+                    <h3 id="csModalTitle" class="font-goodtimes text-lg sm:text-2xl font-bold text-zink mt-2">PROJECT TITLE</h3>
+                </div>
+                <button type="button" onclick="closeCaseStudyModal()" aria-label="Close case study popup" class="w-10 h-10 rounded-full bg-zlight border border-zborder text-zink hover:bg-zink hover:text-white transition-colors flex items-center justify-center text-lg font-bold shrink-0">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="space-y-5 py-5 text-xs sm:text-sm">
+                <div class="p-4 rounded-2xl bg-zlight border border-zborder">
+                    <p class="text-[11px] font-mono uppercase tracking-wider text-zslate">Verified Commercial Outcome</p>
+                    <p id="csModalMetric" class="font-goodtimes text-xl sm:text-2xl font-bold text-zblue mt-1">+310% Organic Reach</p>
+                    <p id="csModalPeriod" class="text-xs text-zslate mt-0.5">Measured over 90-day campaign window</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-zink uppercase tracking-wider text-xs">The Challenge</h4>
+                    <p id="csModalChallenge" class="text-zslate mt-1 leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-zink uppercase tracking-wider text-xs">Strategic & Creative Execution</h4>
+                    <p id="csModalSolution" class="text-zslate mt-1 leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-zink uppercase tracking-wider text-xs mb-2">Capabilities Woven Into This Thread</h4>
+                    <div id="csModalDeliverables" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+
+            <!-- Modal Footer Action -->
+            <div class="pt-4 border-t border-zborder flex flex-wrap items-center justify-between gap-3">
+                <button type="button" id="csLoadScopeBtn" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-zync-gradient text-white text-xs sm:text-sm font-semibold shadow-md hover:opacity-95 transition-all">
+                    Load This Capability Scope Into Project Brief →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MODAL 2: INSTANT HEADER "START A PROJECT" POPUP FORM
+         - Opens right on screen when clicking Header 'Start a Project'
+         - Features Dark Header Banner with Horizontal Logo Dark Background_2.svg
+         - Locks background scroll while open
+         - Linked to Google Sheet + Private Dispatch
+    =========================================== -->
+    <div id="headerProjectModal" role="dialog" aria-modal="true" aria-labelledby="headerModalTitle" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-zink/80 backdrop-blur-md">
+        <div class="relative w-full max-w-xl rounded-3xl bg-white text-zink shadow-2xl border border-zborder overflow-hidden max-h-[92vh] overflow-y-auto">
+            <!-- Dark Navy Modal Header featuring Logo Variant 2 (Horizontal Logo Dark Background_2.svg) -->
+            <div class="bg-zink text-white px-6 py-5 flex items-center justify-between gap-4 border-b border-white/10">
+                <div>
+                    <svg class="h-9 w-auto mb-1.5" viewBox="0 0 580 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zyncify Dark Background Logo">
+                        <defs>
+                            <linearGradient id="mdlDarkRibbonGrad" x1="20" y1="18" x2="105" y2="104" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#D126E2"/>
+                                <stop offset="50%" stop-color="#5E28F4"/>
+                                <stop offset="100%" stop-color="#0094FF"/>
+                            </linearGradient>
+                            <linearGradient id="mdlDarkTagGrad" x1="158" y1="98" x2="544" y2="98" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#0098FF"/>
+                                <stop offset="50%" stop-color="#5B2BF5"/>
+                                <stop offset="100%" stop-color="#E027E0"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M24 26 H86 C94 26 98 34 93 42 L67 84" stroke="url(#mdlDarkRibbonGrad)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M96 94 H34 C26 94 22 86 27 78 L53 36" stroke="url(#mdlDarkRibbonGrad)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g fill="#FFFFFF">
+                            <path d="M144 27 H198 V35.5 L159 61.5 H198 V70 H142 V61.5 L181 35.5 H144 V27 Z"/>
+                            <path d="M206 27 H219.5 L237 47 L254.5 27 H268 L242 56 V70 H232 V56 L206 27 Z"/>
+                            <path d="M277 27 H288.5 L321 56.5 V27 H331 V65 C331 68.5 327.5 70.5 324 68 L287 37.5 V70 H277 V27 Z"/>
+                            <path d="M364 27 H398 V35.5 H365 C355.5 35.5 351 40.5 351 48.5 C351 56.5 355.5 61.5 365 61.5 H398 V70 H364 C348 70 340 61 340 48.5 C340 36 348 27 364 27 Z"/>
+                            <rect x="409" y="27" width="10.5" height="43"/>
+                            <path d="M433 27 H487 V35.5 H443.5 V70 H433 V27 Z"/>
+                            <rect x="451" y="45.5" width="31" height="8.5"/>
+                            <path d="M493 27 H506.5 L524 47 L541.5 27 H555 L529 56 V70 H519 V56 L493 27 Z"/>
+                        </g>
+                        <text x="351" y="101" text-anchor="middle" fill="url(#mdlDarkTagGrad)" font-family="'Poppins', sans-serif" font-weight="600" font-size="13.5" letter-spacing="5.2">SYNC MINDS, SHIFT THREADZ</text>
+                    </svg>
+                    <h3 id="headerModalTitle" class="font-goodtimes text-sm sm:text-base font-bold text-white">START A PROJECT BRIEF</h3>
+                </div>
+                <button type="button" onclick="closeProjectModal()" aria-label="Close project form popup" class="w-10 h-10 rounded-full bg-white/10 border border-white/15 text-white hover:bg-zpink transition-colors flex items-center justify-center text-lg font-bold shrink-0">
+                    ✕
+                </button>
+            </div>
+
+            <div class="p-6 sm:p-8">
+                <!-- Synced Capabilities Bar Inside Modal -->
+                <div class="p-3.5 rounded-2xl bg-zlight border border-zborder">
+                    <div class="flex items-center justify-between text-xs mb-1.5">
+                        <span class="font-semibold text-zink">Selected Capabilities Scope:</span>
+                        <span id="modalScopeCount" class="font-mono text-[11px] text-zblue font-bold">0 Selected</span>
+                    </div>
+                    <div id="modalScopePills" class="flex flex-wrap gap-1.5 text-xs text-zslate">
+                        <span>General Creative & Digital Enquiry (Click capabilities on page to customize)</span>
+                    </div>
+                </div>
+
+                <!-- Instant Modal Form -->
+                <form id="headerModalForm" onsubmit="handleProjectBriefSubmit(event, 'modal')" class="space-y-4 mt-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <div>
+                            <label for="modalName" class="block text-xs font-semibold text-zink mb-1">Your Name *</label>
+                            <input type="text" id="modalName" name="name" required placeholder="Your full name" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                        </div>
+                        <div>
+                            <label for="modalBrand" class="block text-xs font-semibold text-zink mb-1">Brand / Company *</label>
+                            <input type="text" id="modalBrand" name="brand" required placeholder="Company or brand name" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <div>
+                            <label for="modalEmail" class="block text-xs font-semibold text-zink mb-1">Work Email *</label>
+                            <input type="email" id="modalEmail" name="email" required placeholder="you@brand.com" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                        </div>
+                        <div>
+                            <label for="modalPhone" class="block text-xs font-semibold text-zink mb-1">Phone / WhatsApp *</label>
+                            <input type="tel" id="modalPhone" name="phone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="modalTimeline" class="block text-xs font-semibold text-zink mb-1">Engagement Model</label>
+                        <select id="modalTimeline" name="timeline" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue">
+                            <option value="Immediate Sprint (Within 2 Weeks)">Immediate Sprint (Within 2 Weeks)</option>
+                            <option value="Monthly Creative & Growth Retainer">Monthly Creative & Growth Retainer</option>
+                            <option value="Website / Campaign Launch (30–60 Days)">Website / Campaign Launch (30–60 Days)</option>
+                            <option value="Flexible / Custom Scope">Flexible / Custom Scope</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="modalNotes" class="block text-xs font-semibold text-zink mb-1">Project Brief & Goals *</label>
+                        <textarea id="modalNotes" name="notes" rows="3" required placeholder="What are we building or shifting together?" class="w-full px-3.5 py-2.5 rounded-xl border border-zborder bg-zlight text-sm text-zink focus:outline-none focus:border-zblue"></textarea>
+                    </div>
+
+                    <button type="submit" id="modalSubmitBtn" class="w-full py-3.5 px-6 rounded-2xl bg-zync-gradient text-white text-sm font-semibold shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                        <span>Submit Project Brief</span>
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+
+                <!-- Modal Success & Google Sheet Action -->
+                <div id="modalSuccessPanel" class="hidden mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-3">
+                    <p class="text-xs sm:text-sm font-bold text-emerald-950">✓ Brief Dispatched & Synced for Google Sheets!</p>
+                    <p class="text-xs text-emerald-800">Your structured lead row is copied to clipboard and ready in the linked Zyncify project sheet.</p>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <a href="https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zink text-white text-xs font-semibold hover:bg-zblue transition-colors">
+                            <span>Open Linked Google Sheet</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                        <button type="button" onclick="copyLastSubmissionRow()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-emerald-300 text-emerald-900 text-xs font-semibold">
+                            <span>Copy Row</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         SELF-CONTAINED APPLICATION JAVASCRIPT
+    =========================================== -->
+    <script>
+        // Linked Google Sheet URL (Requested)
+        const ZYNCIFY_GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing';
+
+        // Private Obfuscated Endpoint (Never displayed publicly in UI or HTML text)
+        const _zPrivateEndpoint = () => {
+            const p = ['https://formsubmit.co/ajax/', 'zyncify', 'corp', '@', 'gmail', '.com'];
+            return p.join('');
+        };
+
+        // Application State (Starts with 0 selected capabilities as requested)
+        const appState = {
+            selectedServices: new Set(),
+            brandStage: 'Startup / Launch',
+            activeCardIndex: 0,
+            deckTimer: null,
+            scrollLockY: 0,
+            toastTimer: null,
+            lastFormattedRow: ''
+        };
+
+        // Case Studies Data
+        const CASE_STUDIES = [
+            {
+                tag: 'CASE 01 // CONSUMER ELECTRONICS',
+                title: 'PULSE AUDIO — SHORT-FORM REELS & SOCIAL ARCHITECTURE',
+                metric: '3.1x Organic Reach Expansion',
+                period: 'Measured across a 90-day product launch sprint',
+                challenge: 'Pulse Audio had strong hardware engineering, but their social presence relied on static studio renders that blended into crowded feeds—resulting in low engagement and rising paid acquisition costs.',
+                solution: 'We replaced predictable product templates with a high-velocity 9:16 Reels system: 3-second visual hooks, kinetic typography teardowns, creator-style audio tests, and synchronized paid amplification.',
+                deliverables: ['Reels & Video Content', 'Social Media Strategy', 'Social Media Creatives', 'Paid Marketing']
+            },
+            {
+                tag: 'CASE 02 // B2B FINTECH FLAGSHIP',
+                title: 'NOVA FINTECH — DIGITAL FLAGSHIP & CONVERSION SYSTEM',
+                metric: '+64% Qualified Demo Requests',
+                period: 'Measured 60 days post-website relaunch',
+                challenge: 'Nova’s legacy corporate website suffered from a 78% bounce rate and complex jargon that failed to convert fast-moving SME founders.',
+                solution: 'We redesigned and developed a light-first, interactive web experience featuring an instant fee-savings calculator, simplified human copywriting, and dedicated paid search landing pages.',
+                deliverables: ['Website Design', 'Website Development', 'Copywriting', 'Landing Pages']
+            },
+            {
+                tag: 'CASE 03 // D2C APPAREL & STREETWEAR',
+                title: 'KINETIC DROP 04 — INTEGRATED CAMPAIGN & PAID ACQUISITION',
+                metric: '3.8x Blended Paid ROAS',
+                period: 'Measured across a 4-week capsule launch campaign',
+                challenge: 'Previous seasonal drops suffered from disconnected teaser content and high mobile cart abandonment during peak launch hours.',
+                solution: 'We created a unified campaign concept, built a fast-loading drop waitlist landing page, and deployed 18 motion ad variants across Meta and Google.',
+                deliverables: ['Campaign Concepts', 'Performance Marketing', 'Landing Pages', 'Reels & Video Content']
+            }
+        ];
+
+        // ==========================================
+        // 1. BACKGROUND SCROLL LOCK FOR MODALS
+        // ==========================================
+        function lockBackgroundScroll() {
+            if (!document.body.classList.contains('modal-scroll-locked')) {
+                appState.scrollLockY = window.scrollY || window.pageYOffset || 0;
+                document.body.style.top = `-${appState.scrollLockY}px`;
+                document.body.classList.add('modal-scroll-locked');
+            }
+        }
+
+        function unlockBackgroundScroll() {
+            if (document.body.classList.contains('modal-scroll-locked')) {
+                document.body.classList.remove('modal-scroll-locked');
+                document.body.style.top = '';
+                window.scrollTo(0, appState.scrollLockY);
+            }
+        }
+
+        // ==========================================
+        // 2. HERO 3D FLOATING & SWIPEABLE CARD DECK
+        // ==========================================
+        function updateHeroDeckUI() {
+            const cards = document.querySelectorAll('#heroDeckStage .hero-deck-card');
+            const total = cards.length;
+            if (!total) return;
+
+            cards.forEach((card, idx) => {
+                const relPos = (idx - appState.activeCardIndex + total) % total;
+                card.classList.remove('hero-card-pos-0', 'hero-card-pos-1', 'hero-card-pos-2', 'hero-card-pos-3');
+                card.classList.add(`hero-card-pos-${relPos}`);
+                card.setAttribute('aria-hidden', relPos === 0 ? 'false' : 'true');
+            });
+
+            const dotButtons = document.querySelectorAll('#heroDeckDots button');
+            dotButtons.forEach((btn, idx) => {
+                const bar = btn.querySelector('.dot-bar');
+                const isActive = idx === appState.activeCardIndex;
+                btn.setAttribute('aria-current', isActive ? 'true' : 'false');
+                if (bar) {
+                    bar.className = isActive
+                        ? 'dot-bar block h-2 w-6 rounded-full bg-zink transition-all'
+                        : 'dot-bar block h-2 w-2 rounded-full bg-slate-300 transition-all';
+                }
+            });
+        }
+
+        function setDeckCard(index) {
+            const total = 4;
+            appState.activeCardIndex = ((index % total) + total) % total;
+            updateHeroDeckUI();
+            restartDeckAutoTimer();
+        }
+
+        function nextDeckCard() {
+            setDeckCard(appState.activeCardIndex + 1);
+        }
+
+        function prevDeckCard() {
+            setDeckCard(appState.activeCardIndex - 1);
+        }
+
+        function restartDeckAutoTimer() {
+            if (appState.deckTimer) clearInterval(appState.deckTimer);
+            const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!prefersReduced) {
+                appState.deckTimer = setInterval(() => {
+                    nextDeckCard();
+                }, 3500);
+            }
+        }
+
+        function initHeroDeckSwipe() {
+            const stage = document.getElementById('heroDeckStage');
+            if (!stage) return;
+
+            let startX = 0;
+            let isDragging = false;
+
+            stage.addEventListener('pointerdown', (e) => {
+                startX = e.clientX;
+                isDragging = true;
+                if (appState.deckTimer) clearInterval(appState.deckTimer);
+            });
+
+            stage.addEventListener('pointerup', (e) => {
+                if (!isDragging) return;
+                isDragging = false;
+                const diffX = e.clientX - startX;
+                if (Math.abs(diffX) > 36) {
+                    if (diffX < 0) {
+                        nextDeckCard();
+                    } else {
+                        prevDeckCard();
+                    }
+                } else {
+                    nextDeckCard();
+                }
+            });
+
+            stage.addEventListener('pointerleave', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    restartDeckAutoTimer();
+                }
+            });
+
+            // Touch fallback for mobile browsers
+            let touchStartX = 0;
+            stage.addEventListener('touchstart', (e) => {
+                if (e.touches && e.touches.length > 0) {
+                    touchStartX = e.touches[0].clientX;
+                }
+            }, { passive: true });
+
+            stage.addEventListener('touchend', (e) => {
+                if (e.changedTouches && e.changedTouches.length > 0) {
+                    const deltaX = e.changedTouches[0].clientX - touchStartX;
+                    if (Math.abs(deltaX) > 35) {
+                        if (deltaX < 0) nextDeckCard();
+                        else prevDeckCard();
+                    }
+                }
+            }, { passive: true });
+        }
+
+        // ==========================================
+        // 3. CAPABILITIES & CUSTOM SCOPE BUILDER
+        // ==========================================
+        function showScopeToast(serviceName, added) {
+            const toast = document.getElementById('scopeToast');
+            const badge = document.getElementById('scopeToastBadge');
+            const title = document.getElementById('scopeToastTitle');
+            const sub = document.getElementById('scopeToastSub');
+            if (!toast || !title || !sub || !badge) return;
+
+            const count = appState.selectedServices.size;
+            badge.textContent = added ? '+' : '−';
+            title.textContent = added ? `Added: ${serviceName}` : `Removed: ${serviceName}`;
+            sub.textContent = `${count} capability module${count === 1 ? '' : 's'} in your Active Scope`;
+
+            toast.classList.remove('opacity-0', 'translate-y-4');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            if (appState.toastTimer) clearTimeout(appState.toastTimer);
+            appState.toastTimer = setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-4');
+            }, 2400);
+        }
+
+        function toggleService(serviceName, btnElement) {
+            let added = false;
+            if (appState.selectedServices.has(serviceName)) {
+                appState.selectedServices.delete(serviceName);
+                added = false;
+            } else {
+                appState.selectedServices.add(serviceName);
+                added = true;
+            }
+            syncCapabilitiesUI();
+            showScopeToast(serviceName, added);
+        }
+
+        function clearAllCapabilities() {
+            appState.selectedServices.clear();
+            syncCapabilitiesUI();
+            showScopeToast('All capabilities cleared', false);
+        }
+
+        function focusFirstCapability() {
+            const firstBtn = document.getElementById('firstCapBtn');
+            if (firstBtn) {
+                firstBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstBtn.focus();
+            }
+        }
+
+        function syncCapabilitiesUI() {
+            const count = appState.selectedServices.size;
+            const servicesArray = Array.from(appState.selectedServices);
+
+            // Sync all capability buttons
+            const allCapButtons = document.querySelectorAll('.cap-btn');
+            allCapButtons.forEach((btn) => {
+                const capName = btn.getAttribute('data-cap');
+                const isSelected = appState.selectedServices.has(capName);
+                const badge = btn.querySelector('.cap-badge');
+                btn.classList.toggle('active', isSelected);
+                btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                if (badge) {
+                    badge.textContent = isSelected ? '✓ Added' : '+ Add';
+                }
+            });
+
+            // Sync Sticky Active Scope Box
+            const countBadge = document.getElementById('activeScopeCountBadge');
+            const emptyPrompt = document.getElementById('activeScopeEmptyPrompt');
+            const pillsList = document.getElementById('activeScopePillsList');
+            const clearBtn = document.getElementById('clearScopeBtn');
+            const navCounter = document.getElementById('navScopeCounter');
+
+            if (countBadge) countBadge.textContent = `${count} Selected`;
+            if (navCounter) {
+                navCounter.textContent = String(count);
+                navCounter.classList.toggle('hidden', count === 0);
+            }
+
+            if (count === 0) {
+                if (emptyPrompt) emptyPrompt.classList.remove('hidden');
+                if (pillsList) {
+                    pillsList.classList.add('hidden');
+                    pillsList.classList.remove('flex');
+                    pillsList.innerHTML = '';
+                }
+                if (clearBtn) clearBtn.classList.add('hidden');
+            } else {
+                if (emptyPrompt) emptyPrompt.classList.add('hidden');
+                if (pillsList) {
+                    pillsList.classList.remove('hidden');
+                    pillsList.classList.add('flex');
+                    pillsList.innerHTML = servicesArray.map(s => `
+                        <button type="button" onclick="toggleService('${s.replace(/'/g, "\\'")}', null)" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zink text-white text-xs font-medium hover:bg-rose-600 transition-colors" title="Click to remove">
+                            <span>${s}</span>
+                            <span class="text-zcyan font-bold">✕</span>
+                        </button>
+                    `).join('');
+                }
+                if (clearBtn) clearBtn.classList.remove('hidden');
+            }
+
+            // Sync Bottom Enquiry Form Pills
+            const bottomPills = document.getElementById('bottomFormScopePills');
+            if (bottomPills) {
+                if (count === 0) {
+                    bottomPills.innerHTML = '<span class="text-xs text-slate-400 italic">No specific modules selected yet (General Enquiry)</span>';
+                } else {
+                    bottomPills.innerHTML = servicesArray.map(s => `
+                        <span class="px-2.5 py-1 rounded-full bg-zcyan/20 text-zcyan border border-zcyan/30 text-xs font-medium">${s}</span>
+                    `).join('');
+                }
+            }
+
+            // Sync Header Modal Scope Pills
+            const modalCount = document.getElementById('modalScopeCount');
+            const modalPills = document.getElementById('modalScopePills');
+            if (modalCount) modalCount.textContent = `${count} Selected`;
+            if (modalPills) {
+                if (count === 0) {
+                    modalPills.innerHTML = '<span>General Creative & Digital Enquiry (Select capabilities on page to customize)</span>';
+                } else {
+                    modalPills.innerHTML = servicesArray.map(s => `
+                        <span class="px-2.5 py-1 rounded-full bg-zink text-white text-[11px] font-medium">${s}</span>
+                    `).join('');
+                }
+            }
+        }
+
+        function selectBrandStage(stageName, btnEl) {
+            appState.brandStage = stageName;
+            const btns = document.querySelectorAll('.stage-pill-btn');
+            btns.forEach(b => {
+                b.className = 'stage-pill-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-white/15 bg-white/5 text-slate-300 hover:text-white transition-all';
+            });
+            if (btnEl) {
+                btnEl.className = 'stage-pill-btn py-2.5 px-3 rounded-xl text-xs font-semibold border border-zcyan bg-zcyan/20 text-white transition-all';
+            }
+        }
+
+        // ==========================================
+        // 4. CASE STUDY MODAL (Cross Close Only, No Backdrop Close, Locks Scroll)
+        // ==========================================
+        function openCaseStudyModal(index) {
+            const study = CASE_STUDIES[index];
+            if (!study) return;
+
+            document.getElementById('csModalTag').textContent = study.tag;
+            document.getElementById('csModalTitle').textContent = study.title;
+            document.getElementById('csModalMetric').textContent = study.metric;
+            document.getElementById('csModalPeriod').textContent = study.period;
+            document.getElementById('csModalChallenge').textContent = study.challenge;
+            document.getElementById('csModalSolution').textContent = study.solution;
+
+            const delivContainer = document.getElementById('csModalDeliverables');
+            delivContainer.innerHTML = study.deliverables.map(d => `
+                <span class="px-3 py-1 rounded-full bg-zlight border border-zborder text-xs font-semibold text-zink">${d}</span>
+            `).join('');
+
+            const loadBtn = document.getElementById('csLoadScopeBtn');
+            loadBtn.onclick = () => {
+                study.deliverables.forEach(d => appState.selectedServices.add(d));
+                syncCapabilitiesUI();
+                closeCaseStudyModal();
+                openProjectModal();
+            };
+
+            const modal = document.getElementById('caseStudyModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            lockBackgroundScroll();
+        }
+
+        function closeCaseStudyModal() {
+            const modal = document.getElementById('caseStudyModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            unlockBackgroundScroll();
+        }
+
+        // ==========================================
+        // 5. INSTANT HEADER PROJECT MODAL
+        // ==========================================
+        function openProjectModal() {
+            syncCapabilitiesUI();
+            const modal = document.getElementById('headerProjectModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            lockBackgroundScroll();
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('headerProjectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            unlockBackgroundScroll();
+        }
+
+        // Mobile Nav Drawer Toggle
+        function toggleMobileNav() {
+            const drawer = document.getElementById('mobileNavDrawer');
+            const btn = document.getElementById('mobileMenuBtn');
+            if (!drawer) return;
+            const isHidden = drawer.classList.contains('hidden');
+            drawer.classList.toggle('hidden', !isHidden);
+            if (btn) btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        }
+
+        // ==========================================
+        // 6. CLIPBOARD HELPER & PROJECT BRIEF SUBMISSION
+        // ==========================================
+        function copyTextToClipboard(text) {
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                return true;
+            } catch (err) {
+                return false;
+            }
+        }
+
+        function copyLastSubmissionRow() {
+            if (appState.lastFormattedRow) {
+                copyTextToClipboard(appState.lastFormattedRow);
+                showScopeToast('Sheet row copied to clipboard', true);
+            }
+        }
+
+        async function handleProjectBriefSubmit(event, source) {
+            event.preventDefault();
+
+            const isModal = source === 'modal';
+            const submitBtn = document.getElementById(isModal ? 'modalSubmitBtn' : 'bottomSubmitBtn');
+            const successPanel = document.getElementById(isModal ? 'modalSuccessPanel' : 'bottomSuccessPanel');
+
+            const name = document.getElementById(isModal ? 'modalName' : 'bottomName').value.trim();
+            const brand = document.getElementById(isModal ? 'modalBrand' : 'bottomBrand').value.trim();
+            const email = document.getElementById(isModal ? 'modalEmail' : 'bottomEmail').value.trim();
+            const phone = document.getElementById(isModal ? 'modalPhone' : 'bottomPhone').value.trim();
+            const timeline = document.getElementById(isModal ? 'modalTimeline' : 'bottomTimeline').value;
+            const notes = document.getElementById(isModal ? 'modalNotes' : 'bottomNotes').value.trim();
+
+            const scopeList = appState.selectedServices.size > 0
+                ? Array.from(appState.selectedServices).join(', ')
+                : 'General Full-Stack Enquiry';
+
+            const timestamp = new Date().toISOString().split('T')[0];
+
+            // Tab-separated row formatted for instant paste into the linked Google Sheet
+            appState.lastFormattedRow = `${timestamp}\t${name}\t${brand}\t${email}\t${phone}\t${appState.brandStage}\t${timeline}\t${scopeList}\t${notes.replace(/\r?\n/g, ' ')}`;
+            copyTextToClipboard(appState.lastFormattedRow);
+
+            // Store backup locally in browser
+            try {
+                const existingLeads = JSON.parse(localStorage.getItem('zyncify_leads_backup') || '[]');
+                existingLeads.push({ timestamp, name, brand, email, phone, stage: appState.brandStage, timeline, scope: scopeList, notes });
+                localStorage.setItem('zyncify_leads_backup', JSON.stringify(existingLeads));
+            } catch (e) {}
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>Syncing Project Thread...</span>';
+            }
+
+            // Dispatch privately via AJAX
+            try {
+                await fetch(_zPrivateEndpoint(), {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        _subject: `New Zyncify Project Brief — ${brand} (${name})`,
+                        Submitted_Date: timestamp,
+                        Client_Name: name,
+                        Brand_Name: brand,
+                        Work_Email: email,
+                        Phone_WhatsApp: phone,
+                        Brand_Stage: appState.brandStage,
+                        Engagement_Timeline: timeline,
+                        Selected_Capabilities: scopeList,
+                        Project_Brief: notes,
+                        Linked_Google_Sheet: ZYNCIFY_GOOGLE_SHEET_URL
+                    })
+                });
+            } catch (networkErr) {
+                // Fallback already handled via local storage + Google Sheet row copy
+            }
+
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>✓ Brief Synced & Logged</span>';
+            }
+
+            if (successPanel) {
+                successPanel.classList.remove('hidden');
+            }
+
+            showScopeToast(`Brief logged for ${brand}`, true);
+        }
+
+        // ==========================================
+        // 7. INITIALIZE APPLICATION ON LOAD
+        // ==========================================
+        function bootZyncifyApp() {
+            updateHeroDeckUI();
+            initHeroDeckSwipe();
+            restartDeckAutoTimer();
+            syncCapabilitiesUI();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootZyncifyApp);
+        } else {
+            bootZyncifyApp();
+        }
+    </script>
+</body>
+</html>

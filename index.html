@@ -2290,7 +2290,10 @@
             document.body.appendChild(zyncifySubmissionFrame);
 
             window.addEventListener('message', (event) => {
-                if (!zyncifySubmissionFrame || event.source !== zyncifySubmissionFrame.contentWindow) return;
+                // Apps Script HtmlService may wrap its response in an additional
+                // sandboxed iframe. In that case event.source is the inner frame,
+                // not our outer submission iframe. Authenticate the response with
+                // the one-time, unguessable requestId instead of comparing sources.
                 const data = event.data || {};
                 if (data.type !== 'zyncify-lead-submit' || !zyncifySubmissionPending) return;
                 if (data.requestId !== zyncifySubmissionPending.requestId) return;
@@ -2356,7 +2359,7 @@
                         zyncifySubmissionPending = null;
                         reject(new Error('The submission timed out. Please try again.'));
                     }
-                }, 25000);
+                }, 45000);
             });
         }
 

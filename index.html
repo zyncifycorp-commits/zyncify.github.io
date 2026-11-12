@@ -1630,26 +1630,11 @@
                                 </button>
                             </form>
 
-                            <!-- Submission Confirmation & Linked Google Sheet Panel -->
-                            <div id="bottomSuccessPanel" class="hidden mt-5 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-3">
-                                <div class="flex items-start justify-between gap-3">
-                                    <div>
-                                        <p class="text-sm font-bold text-emerald-950">✓ Project Brief Logged & Dispatched!</p>
-                                        <p class="text-xs text-emerald-800 mt-0.5">Your structured row has been copied to your clipboard and synced for the Zyncify project tracker.</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-wrap gap-2.5 pt-1">
-                                    <a href="https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zink text-white text-xs font-semibold hover:bg-zblue transition-colors">
-                                        <span>Open Linked Google Sheet</span>
-                                        <span aria-hidden="true">↗</span>
-                                    </a>
-                                    <button type="button" onclick="copyLastSubmissionRow()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-emerald-300 text-emerald-900 text-xs font-semibold hover:bg-emerald-100 transition-colors">
-                                        <span>Copy Sheet Row Again</span>
-                                    </button>
-                                </div>
+                            <!-- Client-safe submission confirmation -->
+                            <div id="bottomSuccessPanel" class="hidden mt-5 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-2">
+                                <p class="text-base font-bold text-emerald-950">✓ Your project brief has been received.</p>
+                                <p class="text-sm text-emerald-800">Thank you for reaching out to Zyncify. Our team will review your details and contact you shortly.</p>
                             </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1845,18 +1830,9 @@
                 </form>
 
                 <!-- Modal Success & Google Sheet Action -->
-                <div id="modalSuccessPanel" class="hidden mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-3">
-                    <p class="text-xs sm:text-sm font-bold text-emerald-950">✓ Brief Dispatched & Synced for Google Sheets!</p>
-                    <p class="text-xs text-emerald-800">Your structured lead row is copied to clipboard and ready in the linked Zyncify project sheet.</p>
-                    <div class="flex flex-wrap gap-2 pt-1">
-                        <a href="https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zink text-white text-xs font-semibold hover:bg-zblue transition-colors">
-                            <span>Open Linked Google Sheet</span>
-                            <span aria-hidden="true">↗</span>
-                        </a>
-                        <button type="button" onclick="copyLastSubmissionRow()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-emerald-300 text-emerald-900 text-xs font-semibold">
-                            <span>Copy Row</span>
-                        </button>
-                    </div>
+                <div id="modalSuccessPanel" class="hidden mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-2">
+                    <p class="text-sm font-bold text-emerald-950">✓ Your project brief has been received.</p>
+                    <p class="text-sm text-emerald-800">Thank you for reaching out to Zyncify. Our team will review your details and contact you shortly.</p>
                 </div>
             </div>
         </div>
@@ -1867,7 +1843,7 @@
     =========================================== -->
     <script>
         // Linked Google Sheet URL (Requested)
-        const ZYNCIFY_GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing';
+        const ZYNCIFY_GOOGLE_SHEET_URL = '';
 
         // Google Apps Script web app endpoint.
 // Paste the deployed /exec URL here after deploying ZyncifyLeads.gs.

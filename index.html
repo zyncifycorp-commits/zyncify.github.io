@@ -1581,7 +1581,7 @@
                             <div class="flex items-center justify-between gap-4 mb-5 pb-4 border-b border-zborder">
                                 <div>
                                     <h3 class="font-goodtimes text-lg sm:text-xl font-bold text-zink">PROJECT BRIEF CONFIGURATION</h3>
-                                    <p class="text-xs text-zslate mt-0.5">Fill in your details below to send your project brief and log it to our project sheet.</p>
+                                    <p class="text-xs text-zslate mt-0.5">Fill in your details below. Your project brief is sent securely to the Zyncify team.</p>
                                 </div>
                                 <!-- Logo Variant 3: Stacked Primary Logo PNG (Light Background) -->
                             </div>
@@ -1869,11 +1869,9 @@
         // Linked Google Sheet URL (Requested)
         const ZYNCIFY_GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1U5zsfxdqPnkOAZ98Aq1tYyJFr2jEFITkj2uyIQhgiQE/edit?usp=sharing';
 
-        // Private Obfuscated Endpoint (Never displayed publicly in UI or HTML text)
-        const _zPrivateEndpoint = () => {
-            const p = ['https://formsubmit.co/ajax/', 'zyncify', 'corp', '@', 'gmail', '.com'];
-            return p.join('');
-        };
+        // Google Apps Script web app endpoint.
+// Paste the deployed /exec URL here after deploying ZyncifyLeads.gs.
+        const ZYNCIFY_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzS_rt6BrXSbQPLfWvLLG0JyW1slcMH_cb9VeNXFFWgCgTJsbmarNrznyVexo0XefSAug/exec';
 
         // Application State (Starts with 0 selected capabilities as requested)
         const appState = {
@@ -2272,36 +2270,101 @@
         }
 
         // ==========================================
-        // 6. CLIPBOARD HELPER & PROJECT BRIEF SUBMISSION
         // ==========================================
-        function copyTextToClipboard(text) {
-            try {
-                const ta = document.createElement('textarea');
-                ta.value = text;
-                ta.setAttribute('readonly', '');
-                ta.style.position = 'fixed';
-                ta.style.top = '-9999px';
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                return true;
-            } catch (err) {
-                return false;
-            }
+        // 6. PRIVATE GOOGLE SHEETS PROJECT BRIEF SUBMISSION
+        // Submits through a hidden iframe to a Google Apps Script web app.
+        // The spreadsheet ID and write permissions stay on the server.
+        // ==========================================
+        let zyncifySubmissionFrame = null;
+        let zyncifySubmissionForm = null;
+        let zyncifySubmissionPending = null;
+
+        function getZyncifySubmissionFrame() {
+            if (zyncifySubmissionFrame) return zyncifySubmissionFrame;
+
+            zyncifySubmissionFrame = document.createElement('iframe');
+            zyncifySubmissionFrame.name = 'zyncifyLeadSubmissionFrame';
+            zyncifySubmissionFrame.title = 'Private enquiry submission';
+            zyncifySubmissionFrame.setAttribute('aria-hidden', 'true');
+            zyncifySubmissionFrame.style.cssText = 'position:absolute;width:1px;height:1px;left:-9999px;border:0;';
+            document.body.appendChild(zyncifySubmissionFrame);
+
+            window.addEventListener('message', (event) => {
+                if (!zyncifySubmissionFrame || event.source !== zyncifySubmissionFrame.contentWindow) return;
+                const data = event.data || {};
+                if (data.type !== 'zyncify-lead-submit' || !zyncifySubmissionPending) return;
+                if (data.requestId !== zyncifySubmissionPending.requestId) return;
+
+                const pending = zyncifySubmissionPending;
+                zyncifySubmissionPending = null;
+                if (data.status === 'success') {
+                    pending.resolve(data);
+                } else {
+                    pending.reject(new Error(data.message || 'The enquiry could not be saved.'));
+                }
+            });
+
+            return zyncifySubmissionFrame;
         }
 
-        function copyLastSubmissionRow() {
-            if (appState.lastFormattedRow) {
-                copyTextToClipboard(appState.lastFormattedRow);
-                showScopeToast('Sheet row copied to clipboard', true);
-            }
+        function submitLeadToPrivateSheet(payload) {
+            return new Promise((resolve, reject) => {
+                if (!ZYNCIFY_SHEETS_WEB_APP_URL ||
+                    !ZYNCIFY_SHEETS_WEB_APP_URL.startsWith('https://script.google.com/macros/s/') ||
+                    !ZYNCIFY_SHEETS_WEB_APP_URL.endsWith('/exec')) {
+                    reject(new Error('The private Google Sheets endpoint has not been configured.'));
+                    return;
+                }
+
+                if (zyncifySubmissionPending) {
+                    reject(new Error('A project brief is already being submitted.'));
+                    return;
+                }
+
+                const requestId = (window.crypto && crypto.randomUUID)
+                    ? crypto.randomUUID()
+                    : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+                const frame = getZyncifySubmissionFrame();
+                zyncifySubmissionPending = { requestId, resolve, reject };
+
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = ZYNCIFY_SHEETS_WEB_APP_URL;
+                form.target = frame.name;
+                form.acceptCharset = 'UTF-8';
+                form.style.display = 'none';
+
+                const payloadField = document.createElement('input');
+                payloadField.type = 'hidden';
+                payloadField.name = 'payload';
+                payloadField.value = JSON.stringify({ ...payload, requestId });
+
+                const honeypotField = document.createElement('input');
+                honeypotField.type = 'hidden';
+                honeypotField.name = 'website';
+                honeypotField.value = '';
+
+                form.appendChild(payloadField);
+                form.appendChild(honeypotField);
+                document.body.appendChild(form);
+                form.submit();
+                form.remove();
+
+                window.setTimeout(() => {
+                    if (zyncifySubmissionPending && zyncifySubmissionPending.requestId === requestId) {
+                        zyncifySubmissionPending = null;
+                        reject(new Error('The submission timed out. Please try again.'));
+                    }
+                }, 25000);
+            });
         }
 
         async function handleProjectBriefSubmit(event, source) {
             event.preventDefault();
 
             const isModal = source === 'modal';
+            const formElement = event.currentTarget;
             const submitBtn = document.getElementById(isModal ? 'modalSubmitBtn' : 'bottomSubmitBtn');
             const successPanel = document.getElementById(isModal ? 'modalSuccessPanel' : 'bottomSuccessPanel');
 
@@ -2316,60 +2379,44 @@
                 ? Array.from(appState.selectedServices).join(', ')
                 : 'General Full-Stack Enquiry';
 
-            const timestamp = new Date().toISOString().split('T')[0];
-
-            // Tab-separated row formatted for instant paste into the linked Google Sheet
-            appState.lastFormattedRow = `${timestamp}\t${name}\t${brand}\t${email}\t${phone}\t${appState.brandStage}\t${timeline}\t${scopeList}\t${notes.replace(/\r?\n/g, ' ')}`;
-            copyTextToClipboard(appState.lastFormattedRow);
-
-            // Store backup locally in browser
-            try {
-                const existingLeads = JSON.parse(localStorage.getItem('zyncify_leads_backup') || '[]');
-                existingLeads.push({ timestamp, name, brand, email, phone, stage: appState.brandStage, timeline, scope: scopeList, notes });
-                localStorage.setItem('zyncify_leads_backup', JSON.stringify(existingLeads));
-            } catch (e) {}
+            const payload = {
+                submittedAt: new Date().toISOString(),
+                clientName: name,
+                brandName: brand,
+                workEmail: email,
+                phoneWhatsApp: phone,
+                brandStage: appState.brandStage,
+                engagementTimeline: timeline,
+                selectedCapabilities: scopeList,
+                projectBrief: notes,
+                source: isModal ? 'Header Project Form' : 'Website Project Brief'
+            };
 
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.innerHTML = '<span>Syncing Project Thread...</span>';
+                submitBtn.innerHTML = '<span>Sending Your Brief...</span>';
             }
 
-            // Dispatch privately via AJAX
             try {
-                await fetch(_zPrivateEndpoint(), {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        _subject: `New Zyncify Project Brief — ${brand} (${name})`,
-                        Submitted_Date: timestamp,
-                        Client_Name: name,
-                        Brand_Name: brand,
-                        Work_Email: email,
-                        Phone_WhatsApp: phone,
-                        Brand_Stage: appState.brandStage,
-                        Engagement_Timeline: timeline,
-                        Selected_Capabilities: scopeList,
-                        Project_Brief: notes,
-                        Linked_Google_Sheet: ZYNCIFY_GOOGLE_SHEET_URL
-                    })
-                });
-            } catch (networkErr) {
-                // Fallback already handled via local storage + Google Sheet row copy
-            }
+                await submitLeadToPrivateSheet(payload);
 
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = '<span>✓ Brief Synced & Logged</span>';
-            }
+                if (formElement) formElement.classList.add('hidden');
+                if (successPanel) successPanel.classList.remove('hidden');
 
-            if (successPanel) {
-                successPanel.classList.remove('hidden');
-            }
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span>✓ Brief Received</span>';
+                }
 
-            showScopeToast(`Brief logged for ${brand}`, true);
+                showScopeToast('Your project brief has been received', true);
+            } catch (submissionError) {
+                console.error('Zyncify project brief submission failed:', submissionError);
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Try Again</span><span aria-hidden="true">→</span>';
+                }
+                showScopeToast('We could not save your brief. Please try again.', false);
+            }
         }
 
         // ==========================================

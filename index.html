@@ -598,6 +598,116 @@ h6 .text-zync-gradient,
 }
 </style>
 
+
+<style id="zyncify-flow-layout-corrections">
+/* Hero: compact transition from header into the main message. */
+#main-content > section:first-of-type {
+  padding-top: clamp(10px, 1.5vw, 22px) !important;
+  padding-bottom: clamp(38px, 5vw, 68px) !important;
+}
+#main-content > section:first-of-type .zyncify-category-eyebrow {
+  position: static !important;
+  display: block !important;
+  width: fit-content;
+  margin: 0 0 12px !important;
+  transform: none !important;
+  float: none !important;
+  line-height: 1.3 !important;
+}
+#main-content > section:first-of-type h1 {
+  margin-top: 0 !important;
+}
+#main-content > section:first-of-type .lg\\:col-span-7 {
+  align-self: center;
+}
+
+/* Proof strip: one coherent system rather than disconnected text blocks. */
+.zyncify-proof-strip { position: relative; }
+.zyncify-proof-item { min-width: 0; }
+.zyncify-proof-item p { overflow-wrap: anywhere; }
+
+/* Good Times must apply to every word inside Operating Rhythm headings. */
+#process h2,
+#process h2 *,
+#process h3,
+#process h3 *,
+.zyncify-proof-item .font-goodtimes {
+  font-family: "Good Times", sans-serif !important;
+  font-weight: 400 !important;
+}
+#process h2 {
+  max-width: 100%;
+  letter-spacing: 0 !important;
+}
+#process h3 { letter-spacing: 0 !important; }
+
+/* Approach: heading first, subtitle directly below it. */
+#voices > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+#voices > div:first-child > div { width: 100%; }
+#voices .zyncify-approach-title {
+  width: 100%;
+  margin-top: 8px !important;
+  white-space: nowrap;
+  font-size: clamp(20px, 3vw, 40px) !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+}
+#voices .zyncify-approach-subtitle {
+  width: 100%;
+  max-width: 760px !important;
+  margin: 0 !important;
+  line-height: 1.65 !important;
+}
+@media (max-width: 767px) {
+  #voices .zyncify-approach-title {
+    white-space: normal;
+    font-size: clamp(20px, 6vw, 30px) !important;
+  }
+  .zyncify-proof-strip .grid.grid-cols-1.sm\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+<style id="zyncify-hero-title-scale-fix">
+/* Keep the hero statement bold without letting Good Times overwhelm the layout. */
+#main-content > section:first-of-type h1 {
+  font-family: "Good Times", sans-serif !important;
+  font-size: clamp(2.1rem, 3.8vw, 3.25rem) !important;
+  line-height: 1.16 !important;
+  letter-spacing: -0.025em !important;
+  max-width: 900px !important;
+  width: 100%;
+  margin-inline: 0;
+}
+#main-content > section:first-of-type h1 span {
+  font-family: "Good Times", sans-serif !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+}
+@media (max-width: 1023px) {
+  #main-content > section:first-of-type h1 {
+    font-size: clamp(2rem, 5.2vw, 2.75rem) !important;
+    line-height: 1.16 !important;
+  }
+}
+@media (max-width: 767px) {
+  #main-content > section:first-of-type h1 {
+    font-size: clamp(1.85rem, 8vw, 2.35rem) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+}
+</style>
+
 </head>
 <body class="selection:bg-zblue selection:text-white">
 <!-- Skip to Content Link for Accessibility -->
@@ -668,14 +778,14 @@ h6 .text-zync-gradient,
              ZONE 1: EDITORIAL LIGHT HERO + 3D SWIPEABLE DECK
              (No duplicate Start a Project button; no arrow buttons)
         =========================================== -->
-<section class="relative pt-5 sm:pt-10 pb-12 sm:pb-16 lg:pt-16 lg:pb-24 overflow-hidden bg-white">
+<section class="relative pt-2 sm:pt-4 pb-10 sm:pb-12 lg:pt-6 lg:pb-16 overflow-hidden bg-white">
 <!-- Soft Controlled Ambient Glows (Section 06) -->
 <div aria-hidden="true" class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-zcyan/10 blur-3xl"></div>
 <div aria-hidden="true" class="pointer-events-none absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-zpink/10 blur-3xl"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
 <!-- Left Column: Positioning & Proposition -->
-<div class="lg:col-span-7 space-y-6">
+<div class="lg:col-span-7 space-y-5">
 
 <p class="zyncify-category-eyebrow">DIGITAL GROWTH STUDIO</p>
 <h1 class="font-goodtimes text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-zink leading-[1.08]">
@@ -716,13 +826,8 @@ h6 .text-zync-gradient,
 <div aria-label="Interactive Zyncify Pillars Card Deck" class="hero-deck-stage relative w-full max-w-[340px] sm:max-w-[360px] h-[410px]" id="heroDeckStage">
 <!-- Card 01: Social & Reels -->
 <div class="hero-deck-card hero-card-pos-0 w-full h-[380px] rounded-3xl bg-zink text-white p-6 shadow-2xl border border-white/15 flex flex-col justify-between overflow-hidden" data-card-index="0">
-<!-- Top Auto-Cycle Progress Bar -->
-<div class="w-full h-1 bg-white/10 rounded-full overflow-hidden mb-3">
-<div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
-</div>
 <div class="flex items-center justify-between text-xs">
 <span class="px-2.5 py-1 rounded-full bg-zcyan/20 text-zcyan font-semibold">01 / SOCIAL &amp; REELS</span>
-<span class="text-slate-400 font-mono">01 / 04</span>
 </div>
 <!-- Visual Storyboard Preview -->
 <div class="my-auto py-4">
@@ -758,12 +863,8 @@ h6 .text-zync-gradient,
 </div>
 <!-- Card 02: Strategy & Growth -->
 <div class="hero-deck-card hero-card-pos-1 w-full h-[380px] rounded-3xl bg-white text-zink p-6 shadow-2xl border-2 border-zborder flex flex-col justify-between overflow-hidden" data-card-index="1">
-<div class="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-3">
-<div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
-</div>
 <div class="flex items-center justify-between text-xs">
 <span class="px-2.5 py-1 rounded-full bg-zblue/10 text-zblue font-semibold">02 / STRATEGY &amp; GROWTH</span>
-<span class="text-zslate font-mono">02 / 04</span>
 </div>
 <div class="my-auto py-4">
 <div class="p-4 rounded-2xl bg-zlight border border-zborder space-y-3">
@@ -799,7 +900,6 @@ h6 .text-zync-gradient,
 </div>
 <div class="flex items-center justify-between text-xs">
 <span class="px-2.5 py-1 rounded-full bg-zpink/20 text-zpink font-semibold">03 / WEB &amp; DIGITAL</span>
-<span class="text-slate-400 font-mono">03 / 04</span>
 </div>
 <div class="my-auto py-4">
 <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-3">
@@ -830,12 +930,8 @@ h6 .text-zync-gradient,
 </div>
 <!-- Card 04: Brand Identity -->
 <div class="hero-deck-card hero-card-pos-3 w-full h-[380px] rounded-3xl bg-white text-zink p-6 shadow-2xl border-2 border-zborder flex flex-col justify-between overflow-hidden" data-card-index="3">
-<div class="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-3">
-<div class="deck-progress-bar h-full w-full bg-zync-gradient"></div>
-</div>
 <div class="flex items-center justify-between text-xs">
 <span class="px-2.5 py-1 rounded-full bg-zcyan/15 text-zink font-semibold">04 / BRAND IDENTITY</span>
-<span class="text-zslate font-mono">04 / 04</span>
 </div>
 <div class="my-auto py-4">
 <div class="p-4 rounded-2xl bg-zlight border border-zborder space-y-3">
@@ -887,31 +983,32 @@ h6 .text-zync-gradient,
 <!-- ==========================================
              PROOF STRIP (Architectural Dark Ink Bar)
         =========================================== -->
-<section aria-label="Digital Growth Studio and Sectors" class="bg-zink text-white py-8 border-y border-white/10">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-<div class="md:col-span-5 space-y-1">
-<p class="text-[11px] font-mono uppercase tracking-widest text-zcyan">GOOD FIT FOR</p>
-<p class="text-sm sm:text-base font-medium text-slate-200">
-                            Founders with a big idea, growing teams with a busy to-do list, and established brands ready for a fresh pair of eyes.
-                        </p>
-</div>
-<div class="md:col-span-7 grid grid-cols-3 gap-4 border-t md:border-t-0 md:border-l border-white/15 pt-4 md:pt-0 md:pl-8">
-<div>
-<p class="font-goodtimes text-xl sm:text-2xl font-bold text-white">Three Areas</p>
-<p class="text-xs text-slate-300 mt-0.5">Marketing, Creative &amp; Web</p>
-</div>
-<div>
-<p class="font-goodtimes text-xl sm:text-2xl font-bold text-zcyan">Pick &amp; Mix</p>
-<p class="text-xs text-slate-300 mt-0.5">Only what you need</p>
-</div>
-<div>
-<p class="font-goodtimes text-xl sm:text-2xl font-bold text-zpink">No middle layers</p>
-<p class="text-xs text-slate-300 mt-0.5">Work directly with the people making it</p>
-</div>
-</div>
-</div>
-</div>
+<section aria-label="What Zyncify brings together" class="zyncify-proof-strip bg-zink text-white border-y border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+      <div class="lg:col-span-4">
+        <p class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[.2em] text-zcyan mb-2">ONE CONNECTED STUDIO</p>
+        <p class="text-sm sm:text-base leading-relaxed text-slate-200 max-w-md">The right mix of thinking, creativity and digital execution, brought together around your goals.</p>
+      </div>
+      <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+        <div class="zyncify-proof-item rounded-2xl border border-white/10 bg-white/[.04] px-4 py-4">
+          <span class="block text-[10px] font-semibold uppercase tracking-[.18em] text-zcyan mb-2">01 / THINK</span>
+          <p class="font-goodtimes text-base sm:text-lg text-white">Strategy</p>
+          <p class="text-xs text-slate-300 mt-1">Clear direction and sharper decisions</p>
+        </div>
+        <div class="zyncify-proof-item rounded-2xl border border-white/10 bg-white/[.04] px-4 py-4">
+          <span class="block text-[10px] font-semibold uppercase tracking-[.18em] text-zpink mb-2">02 / CREATE</span>
+          <p class="font-goodtimes text-base sm:text-lg text-white">Creative</p>
+          <p class="text-xs text-slate-300 mt-1">Distinctive brands and useful content</p>
+        </div>
+        <div class="zyncify-proof-item rounded-2xl border border-white/10 bg-white/[.04] px-4 py-4">
+          <span class="block text-[10px] font-semibold uppercase tracking-[.18em] text-zcyan mb-2">03 / GROW</span>
+          <p class="font-goodtimes text-base sm:text-lg text-white">Digital</p>
+          <p class="text-xs text-slate-300 mt-1">Web, campaigns and ongoing growth</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- ==========================================
              ZONE 2: FULL-BLEED DARK NAVY PORTFOLIO STAGE (#work)
@@ -1548,14 +1645,14 @@ h6 .text-zync-gradient,
 </div>
 <!-- Zyncify Approach Section: replaces illustrative testimonials until real client feedback is available -->
 <div class="pt-8" id="voices">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div class="flex flex-col items-start gap-3 mb-10">
 <div>
 <span class="text-xs font-mono uppercase tracking-widest text-zblue font-semibold">The Zyncify Approach</span>
-<h2 class="font-goodtimes text-2xl sm:text-4xl font-bold text-zink mt-2">
+<h2 class="zyncify-approach-title font-goodtimes text-2xl sm:text-4xl font-bold text-zink mt-2">
                                 GOOD WORK STARTS WITH <span class="text-zync-gradient">GOOD THINKING.</span>
 </h2>
 </div>
-<p class="text-sm text-zslate max-w-md">
+<p class="zyncify-approach-subtitle text-sm sm:text-base text-zslate max-w-3xl">
                             We won't fill this page with quotes we can't verify. Here's how we work, and what you can expect from us.
                         </p>
 </div>
